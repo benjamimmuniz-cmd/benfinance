@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BenFinance — Gestão Financeira Inteligente | BFL Intelligence</title>
+  <meta name="description" content="BenFinance é o sistema de gestão financeira criado pela BFL Intelligence. Controle receitas, despesas, cartões e muito mais com inteligência artificial.">
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAkx0lEQVR42u3deZzVdb0/8Pc5swDDNoKABqLI4o6AKLhvlXvuaRhqP5e8ate07VpW119du16z363UrLQkCsubuWRqJooKuGACgiKrIiCCLAMMwzDDmfP7w7wlCZyBmTnL9/l8PO7jPnKGOWc+35nzer3fc+ZMKhKgqufe2QCAHNUtfyNV6p9jSX2Cgh4AxSABBUDgA6AQJKQACH0AlIGEFAChD4AykKACIPgBUAQSUgCEPgDKQIIKgOAHQBFoO2nhDwDJy7yUQwCA5G0D8nLDgh8A8lsE2vxHAMIfAPKfjelS/wQBQAn4Z6lS/KQAoJi1xY8EWn0DIPwBoPCyM13snwAAKAEFVACEPwAUbpami+0OA4ASsONSxXAnAYCWfXJgi20AhD8AFM82IO04ASB5WqQAmP4BoLi2AOlCuSMAQNtlbzrfdwAAaPsMTufrhgGA/JWAdFvfIACQ/xLgtwAAIIGaXQBM/wBQ/FuAdGvfAABQeCUg3VofGAAo3BLgOQAAkEA5FQDTPwCU1hbABgAAbABM/wCQhC1AWvgDQPJKgB8BAEACpU3/AJC8LYANAADYAAAAiS0A1v8AUBq2lOnlhX7HV49e5er9zU5ju33ofw+9+hWH8jdTbxvmEAB2ZANQaNP/5qGXZJuXIaGnDAFs7xbAcwAAwAagMNkC2ALYAgC0YgEo5Cf/KQFKgBIAsP02z/ii+hGAEqAEKAEArbABAAASVgCK5Xf/bQFsAWwBALbPP2Z9UW4AlAAlQAkAaKENAACgANgC2ALYAgCUegEo1tf+VwKUACUAoHk+yPyi/xGAEqAEKAEA27kBAAAUAFsAWwBbAAAFQAlQApQAAAUAACh6qWL9DYBcp98k23wrYvr9O1sRwAagxEMvyfwoYMuUIUABSMDkqwQoAUoAQAIKAACQ0AJgC2ALYAsAkNANgBKgBCgBAAksAABAQguALYAtgC0AQEI3AEqAEqAEACSwACgBSoASAJDQAgAAJLQA2ALYAtgCACR0A6AEKAFKAIAfAQCAAmALYAtgC2ALACgASoASoAQoAYACoAQoAUoAgAIAACgAtgC2ALYAAAqAEqAEKAEACgAAoADYAtgC2AIAKABKgBKgBAAoAEqAEqAEACgAAIACYAtgC2ALAKAAKAFKgBIAoAAAAAqALYAtgC0AgAKgBCgBSgCAAqAEKAFKAKAAAAAKALYAtgC2AIACgBKgBCgBgAIAACgAtgC2ALYAtgCAAqAEKAEoAYACoAQkjBIAoACQwC0AtgCAAmALkNASYAugBAAKgBKgBCgBSgCgAAAACoAtgC2ALQCAAqAEKAFKAIACAAAoALYAtgC2AAAKgBKgBCgBAAqAEqAEKAEACgAAoADYAtgC2AIAKABKgBKgBAAKAACgAGALYAtgCwAoACgBSoASACgAKAFKgBIAKAAAgAKALYAtgC0AoACgBCgBSgCgAAAACoAtgC2ALYAtAKAAKAFKgBKgBAAKgBKgBKAEAAoAAKAA2ALYAtgCACgASoASoAQAKAAAgAJgC2ALYAsAoAAoAUqAEgAoACgBSoASACgAAIACgC2ALYAtAKAAoAQoAUoAoAAAAAoAtgC2ALYAgAKAEqAEKAGAAoASoAQoAYACAAAoANgC2ALYAgAKAEqAEqAEAAoAAKAA2AJgC2ALACgASoASoAQoAYACoAQoASgBgAIAACgAtgC2ALYAgALgCJQAJUAJABQAAEABwBbAFsAWAFAAUAKUACUAUABQApQAJQBQAAAABQBbAFsAWwBAAUAJUAKUAEABAAAUAGwBbAFsAQAFACVACVACgNaUquq5d9YxFI727drFyrenFeedb8pENG2KyDRGZDZFNtMY0dQY0VAXsWFtZDesidiwNmJDTWTraiK7ZmlEzeLI1rwT2ZolEXU1bV6K8h1+leURT13fwRd+C/j9Q4/FRZdfl5jv1zHj7o8rr73BhWe7lTsCWky67P3/K2/3frvcvG1u699vXB/ZZXMi++6syC6dFdl3Z0XTkpkRdaudLYACQMlq1zFSfYdGqu/Qv/+3bDayy2ZH0/zJkV3wfGTnT45s7YrtvonVo1d9aAsw9bZhVuBAMmc2R0BBS6UitcveUXb4/4ny0T+Pim/PiIqrHoqywy+JVOee210C/pHnAwA2AFDwhSAdqX4jo6zfyCg747vRNG9iND37s2h648mIrKezANgAkIgykB54VJRf8uuo+MpzkR45OqKswhYAQAEgMV2g58AoP+f7UXHd05EedLQSAKAAkKgi0GtglF9+X5Rf/MuIjtt+HQQlAFAAoJS+sPc/OSquHR+pvgIdQAEgWduA6o9FxVUPR/qQUbYAAAoAiVJWEeXn/iDSIy5QAgAUAJK1CkhF+Tm3Rnr4ec4CQAEgcSXg3FsjtdsQWwAABYBEKauI8tE/j2jfRQkAFABHQKIWAd36RvmZN231fZQAQAGAUvyiH3ZOpPoc6CAABQCStQZIRdmp37IFABQASNwX/oAjItVvpBIAKACQNGUjP+sQAAUAEvfFP/i0rf5GgC0AoABAKapoH+kDTtnmuykBQCkqdwR8YMy4++PKa2/YavhtUyoV0a5TpNp3iejQJVLd94hUnyGR6jM40v0Pi6hoX1gNeOCR0TTl3pxKwE5ju32oBAy9+hVfNIACABERkc1G1K+LbP26iJolkV06K2LmY++/rUN1lB10bqQPvzhSPQYUxN1NDTjcNQMUANjcTmO7NX8LsCUbaiIz8eeRef6eKPvEl6LsuC9EpPP7JZjqskukevSP7HvzE7cFeGRqJv7zkYYW+3h+NALFxXMAyKkEtKhMY2Qe/89o/Om5EY31+d8C7LpPzu/r+QBb5kcioABATrLzJ8emsZdGNG3KbwHo3s/FABQAaJMtwN80vf6XyDx3V34LwM7NKwC2ALYAoACgBLSAzJP/L2JDTf4+sW67NfufKAFKACgAKAE7akNNZKb8Ln8bgG28GJASoASAAgCtJPvGU/m78coqFwBQACAfW4CmBc9HZBqLrgDYAtgCgAKAErAjNm2M7Lr38vPJ7OCrEyoBSgAoALAj1q/Iz+1mGpw9oABAvrYA2Q1r8/OJtMCLEdkC2AKAAoASsJ1SHbrk55OoXdkiH0YJUAJAAUAJ2B4dd87L/c+uW95iH0sJUAJAAYDmKKuIVKc8FYAc/hAQgAIArbAFSO85MqK8Mj8FYNnsFv14tgC2AKAAoATkKLXXsXm739mFf23xj6kEKAGgAMC2tO8cZcPPz0/4r303sivedA0ABQDaegtQduwXIjp1z08BmPl4q31sWwBbAFAAUAK29AU44PAoO/pf8nZfm6Y/1KofXwlQAkABQAnYTGq3IVH+uV/l78l/781//28QtDIlQAmAQlTuCGj72lkWZcdcFWWf/Erewj8iIvPsnRHZrOsB2ABAq24B2neO9KEXRsW146Ps5G/kNfyzqxZF00v3ttnt2QLYAoANACUtlUpFx45V0bVL5+jcqWNcsOzY+O3oPSO124GRHnBEREWHgrifmYe/2eZ/fnj16FUfKkVTbxsWI76Yv/A7dWhZnDq0MK5HfHPWdv2zH/3kl3H9v/+XbzxQANgRF406Oy4adXbJf55N0x6MppmPueBAovkRAImSXTorNt13bd5uf/MfBUz/yaEuCqAAQKvasCY23XNxRENdXu/G5iUAQAGA1lJXE413XxDZlW85CwAFgCTIrnknGm8/LbJvTSmY+2QLACgA0Jrhv2habPrxKZFdNqfg7psSAOST3wKgNDXWR+aJWyLzzE8imjIFezeXjlICAAUAWkTTG+Mj8+ANkV2xwGEAKACUdupviqbpD0fm6dsi+85rzgNgGzwHgNLI/9f+HJlJv4js0tcdBoANAIlpsgecEukDTolszZJomjwmMi/9OqJ2pYMBsAEgCVLVvaPs5K9H5Q3Touz070aqcw+HAqAAkBjllVF25GVRcf1LUXbMlRFpyy4ABYDkqKyKslO/HRXXPB6pHgOcB4ACQJKkeh8QFV98ItIHnu4wABQAEqVdxyj/7E/f/5EAgAIASVoFpKLs1G9H2QlfdRaAAgBJU/aJL0XZEZc5CEABgMSVgNO/E+m9j3cQgAIAiZJKRfmoOyJV3dtZFKmeQ0c7BFAAYDtUVUfZeT90DkVs6NWvOATYDl4dhf81Ztz9ceW1N7TIx6qsqIjKdpXRrbpr7Lxzt9h9t94xsH+/GHrgfjHy4KHRs0f3wmnBA4+M9PDzounl3/kiABQA2BENjY3R0NgYtbXr4+3F78Qr02Z+6O0HDxsc55x5Slx4/pnRpUvnvN/fslNuiKbpD0c0bkjMNXpkaib+85GGktkCTL1tmG88aM7w4wjIhymvvBpf++b3YuCQY+I/brkt6jbU5/X+pDr3jLIj/VZAsZcAQAGgSNSur4ubvn97HHb8mfHqzDfyuwU46oqI8koXBVAAoK3Mnf9WfOJTF8Szk17M353o1N1LBdsCgAIA+dgGnHvhVTFr9rz8bQFGXOBCKAGgAECbl4Da9XHh5ddFY+OmvNx+qt+ISHXp5UIoAaAAQFt7/Y258bN7xuXnxlPpSO13oosAKACQDz+845eRyWTy800x4AgXwBYAFADIhyXvvBvPTnopP0uAPUe6AEoAKACQL489MSE/BaBzz0h13dUFABQAyIcXX56Wt9tO9drLBbAFAAUA8mHO/DfzWAAGugBKACgAkA9r166L2tr1+bnxLru4AEoAKACQL+vyVAC8FgCgAEAebWzI01+rq6p2+LYAoABAvlR16JCfG67o4PCVAFAAIF86d+6Yl9tN+auAgAIA+dFj5+7RoX37/Nx4ZpMLYAsACgDkw96D9szbbWcb6lwAJQAUAMiHEQcPzd+NKwBKACgAkB+nnHBcHgvAehcAUACgrQ0c0C8OHjY4b7efrV3hItgCgAIAbe1LV18aqVQqfwVgxZslf8YrZz3oC00JQAGAwnHwsMFxwXln5Dkd33IhAAUA2kq3narjl3d+P9Lp/H5pJmEDEBEx9bZhvuhsAVAAIL+qq7vEA/f+NPrtvlt+w3/de5GteScx564EKAEoAJA3+++7V0z4029j+NDBeb8v2QWTE3f+SoASQPKUOwLyqWvXzvHVaz4fV15+YVRWVBTEfWqaN8mFARQAaGnpdDpGDB8Snz7r1LjgvDOiY1Vh/eGd7NznEnEdRg/YGFdutgUw/f59C1DoW5GLRp0dF406u+TO/pqv3hh3jfmtL0IFgGJVUVEe7Soro7prl+jZc+fYfbfeMWjAnjFsyH5x6CHDonu3nQryfmffnhrZFQsSc51Wj14VO43tpgQUaQkABQATRQvJTBnnCwFIBE8ChA801kfT1AcT92mvHr3qQ//b1PvhLQAoAFDq0//zYyLq1ybyc1cClAAUAEim+nWRGf/fiT4CJUAJQAGA5E3/z9wRsX6VgwAUAEiKWbPnRebp2x2ELYAtAAoAJMXGhoYY8MhlEZs2OoyID/1KoNALZQgFAErVDf/3+5Fd+rqDABQASIrbfvar+I/6HzoI07/pHwUAkmLsvX+Iy+d+1UEIf+GPAgBJcc9vfh/nTb06Ipt1GMJf+KMAQKnLZDLxtW9+L6667psRTRkHAiSavwVAIixbviIu+8K/xfgJk/7pV91M/6Z/0z82AFCCxoy7P4YecbLw38zYee2Ev/DHBgBKz/QZs+Lfvn1zPDvpRYcBoABQ8tPb9Nfie7feEX/681Mf+u+m/y0z/Zv+UQCgKG1saIhHHhsf9/zm9/HUM5P/6e3CX/gLf1AAKBGZTCZe+uv0uO8Pj8R9D/wpamo++k/5Cn/hL/xBAaDILVqyNJ5+ZnL85emJMf6ZSbFmzTqHAqAAUCo2bcrEoiXvxKzZ82Lq9Nfilekz45VpM2P5eyub9XFM/1vWfZ8zIuY3OAjTPwoAtLympqZoaGyMxobG9/9/46ao37gxamrWxqrVNbFydU2sWlUTq1bXxDtLl8WbCxfFWwsXx6Il78SmTTv2Yj3CH+EPCkDRqN+4MTr22sdBJMWmjdHw5V6tfjNe8Mf3K2zOCwFRkkz/wt/0DwoAwl/4C3/hDwoAwl/4C3/hDwoAACgAYPo3/Zv+QQEA4S/8hT8oAACAAgCmf9O/6R8UABD+wl/4gwIAwl/4C39QAAAABQBM/6Z/0z8oACD8hb/wBwUAAFAAwPRv+jf9gwKA8Bf+wl/4gwKA8Bf+CH9QAAAABQDTv+nf9A8oAAh/4S/8AQUAABQAMP2b/k3/oACA8Bf+wh8UABD+wl/4gwIAACgAYPo3/Zv+QQEA4S/8hT8oAACAAgCmf9O/6R8UAIS/QxD+wh8UAIS/8Bf+wh8UAABAAcD0b/o3/QMKAMJf+At/QAEAABQATP+mf9M/oAAg/IW/8AcUACiY8Ef4gwKA6T+BTP+AAoDwT9j0L/xN/6AAIPyFv/AHFAAAQAHA9G/6N/0DCgDCX/gLf0ABAAAUAEz/pn/TP6AAIPyFv/AHFACEv/AX/qAAAAAKAJj+Tf+mf1AAQPgLf+EPCgAAoACA6d/0b/oHBQDhL/yFv/AHBQDhL/yFv/AHBQAAUAAw/Zv+Tf+AAoDwF/7CH1AAAAAFANO/6d/0DygACH/hL/wBBQDhL/yFP6AAAAAKAKZ/07/pH1AAEP7CX/iDAuAIAEABANO/6d/0DwoAwh/hL/xBAUD4C3+HIvxBAQAAFABM/6Z/0z+gACD8hb/wBxQAAEABwPRv+jf9AwoAwl/4C39AAUD4C3/hDygAAIACgOnf9G/6BxQAhL/wF/6AAgAAKACY/k3/pn9AARD+wl/4C39AARD+wl/4C39QAAAABQDTv+nf9A8oAAh/4S/8AQUAAFAAMP2b/k3/gAKA8Bf+wh9QABD+wl/4AwoAAKAAYPo3/Zv+AQUA4S/8hT+gAAAACgCmf9O/6R/YYeWOQPgLf+Hflirbd4g99hkWffrvF7vusVdU99g1unbfJdp1qIqKyvaRSqVjY31dNPzt/2pWvBsrly6MFUsXxvJFC2Lh7GlRX1frYhaJLt16Rr99h0efAftFzz57RnWPXaNzdfeobFcV5ZWV0VC/IerraqO+rjZWLn073n17Try7cG7Mn/Fi1K7xuNaaUlU9984W+yfRfde+8dU7Htvm+y17e1784JrTW+zjfeDn374k5r36QrPv93fufTkq23fY6vs8Me7HMf5/7vzQf7vsxrtjwOCRBXH2neoWx6jHD/7Qf1vbqV/89pOT2+T2d13xfJz27FlbDf9OHVJx6mGV2/xYa9Zn47EXGlrvrPJ8Pz4I/5b+fslFWXlFHHDoJ2LYsadH//0PifKKyu3+WE1NmXhnwayYP+PFmPnCk/H2nFdb/LGiJSx4bUr89IaLi/qxZnt16Ng5DjruzBh61KnRu/++kUqlmv0xstmmWDR3Zsya8nRMGf9ArFv9XtFdXxuABDjhgmu265sSSl1ZeUUceuL5cew5l0enrt1a5GOm02XRZ8D+0WfA/nH0mZfEe0vejJefejAmP/qbaKjf4LEmj9pXdYpjzro0jjh1dFS0a79j02kqHX0HDY6+gwbHx8+/KmZMfiLG3/eTWL54gW+sFuI5AC2g76DBse8hxzmIPLP63/b035b22HtofOlHD8dpl/xbi4X/R+nRu1+cNPra6Nazj8eaPNpn+NHxldsfjWPPvmyHw/+fimRZeQw58uQ48IiTfDMrAIXYzP81UinHKfyFf0TEsWdfFlfc9KvovmtfF6DEH2tSqVScctGX4+Jv3BGdqru7QApA8uzSd2AMOeoUB0GipVKpOPvKG+PEz35RIU7AY006XRajvvT9OOqMz7kwCkCyffIzV0dZmadVmP6TO/2fftk34pBPnOPgE/JYc/aVN8bgw090QYqUtGpB3Xr1iYM/cU688PhvW/V2jt6lMZY47oiImLSsXPgXSPiPPOG8OPSkzzTr32SzTfHWrKkxb/rzseC1l2PtquWxft3qaNhQF1Wdq6Njl52iU3X36DtocOyxz7Dou9eQ6NCxs8eaNnqs2ZojP3VhDD/+zGb9mw21a2PWyxNi1pQJsWzx/KitWRn1dbVR1alrdKruFjv17BMDBo+IAQeMjF59B/gmVgCKy8c/fUX89akHo7GhvlU+/urRqyImfrrZ/27sKa/GhnY9tvl+F/9xr6hsXNs2k/va2XHuk8eY/Esg/Hvt1j9Ou+Rrzfo3M194Mp6498ex7O15H/n2dTUrYl3Nioi35/7vM9/T6bLof8CIGHbMaTH48BN36NcJt6YlfwWyWB9rtmaX3QfFSaOvy/n9M5saY+IjY+Op//npR76GwwfXeulbc+L1l56KiIieffaMw04eFQd//OwWv87FcH3bgh8BtLDOO/WIw065wEGQKJ+69OtRXtEup/fd1NgQ4279Soy9+Zothv+WNDVlYu70yfG7H14fN116fDx9/8+job7OY00bO/3Sr0dZeUXOU/+d37gwHh1za7NewGn54gXx4M++G//1LyfG9ImP+SZTAIrDMWddEu2rWn5N6dX+TP+FOP0PPPCwnF+YalNjQ9z175fG9ImP7vDtrl+7Kh7/9X/HzVecEFOevD+amjIea9rAoKGHx577H5xb+K9fF3fecFGzXqxpc2tWLotxt3457rnpqlhXs9I3uAJQ2Ko6dY2jzrhY+Av/kg//iIgjT78o5/d9dMyt8ebrf23R269dsyp+f/u3EvkCMa3xWLPN6/2p3G/vj3d/L95dOKdFbnfWlAl5fc6DAkDu3ySnXRgdu3RzEJS0Lt16xqAhh+f0vvNnvBST/vRrh1bEjzVdu/eKgQcemtP7zp46Mf769EMukAJQmlYsXbjFt1W2r4rjzr3c9G/6L+npf78Rx+f8Ou/PPHC3i1TgjzXbsu8hxzXjev/ChVMAStczD/xiq09AGnnCeVHdY9cduo2vD6lz0MK/IMM/InL+2f+KpQtjzrRJLlQBP9bkItfpf8U7b8X8GS+6cApA6Vq/dnU89/Cvtvj28orK+Ph5Vzoo4V+S4R/x/mvT52L2KxMjm826WEX+WLPbwANyer83/vqsi1YEvA7ADnr2oV/GoSedH1Wdqz/y7Qcde3pM+MPdseKdtxzWZlZ32St+dtbSnN735rP++b8tX90UT73S6CDzpEOnLtGlW8+c3vft2dOK6nPr1XdA3PzAa9v971vjT8Xm+7GmWdd7zgzX1wag9NXX1caEP2z5Z5vpdFmcMOoLDoqSm/536vGxnN938bzXXKwif6xpzvVeMt/1VgASYvKj42LtquVbfPsBh50QH9tzHwdFyYR/RETn6p1zft/161a7YEX+WNOs673WE5eLgR8BtIDGhvoYf9+dceYV3/rIt6dSqTjxgmviF9+5wmFRMirbd8jp/bLZbNSvz/0V4G78zQvb/eI2L/75vvjDnTd6rGmFx5pmXe+69b5BbACSY8qT98fKdxdt8e17DTsy+u17kIOiJKb/iIiyHF+fvXHjhshmm1y0In+scb0VALYgk9kUf7n3tq2+z4mf/aKDoiTCPyIi09iQ0/tVtGuf8++OU7iPNa63AsBWTHvu0a2+7OUe+wyLvQ86ykFR9OEfEdFQvyGn90ul0tGuQycXr8gfa1zv0uM5AC0om22KP4/7UVx0/Zbb+Qmj/jVmv/Kc34mOLf85YL/zXxzWrcn9D7N07FId9XXriuZzK/Q/F5uPx5rmXO9OXbsV9PX254BtAFrF6y89HW/Pmb7Ft39sz33igMNOcFBbKgXCvyim/4iI1cuX5Py+vffc1wUs8seaZl3v/q63ApBQj//6v7f69hNGfSHS6TIHJfyLNvwj3v877+tWv5fT+/bd60AXscgfa5p1vXN8hUjyy48AWsH8GS/F3OnPb/F1s3f+2B5x0HFnOCiK3qK5M2LfQ47b5vvl+hcDIyK+fcFH/32BL9/2SPTo3c+h5/GxJtfrvdewI+OPv7jZBbIB0Mw/ysfPuzI6VDh+039xTv8fmDv9+Zzer1ffAdFvv+EuZp4ea9Jl6Ta93j1694v+B4xwcRSAZFo8b2bMfOHJLb69euddIlPWzkEJ/6IN/4iI114cn/OTzI761MUuaJ4ea8or2rX59T76jM+5OApAcj0x7kdeEEP4l2z4R0SsWbks5r2a21S47yHHxpCjTnFhi/ixpjnXe69hR8ZBx3qmvQKQUMsWzY9XJvzRQVDSnntoTM7ve+bnvxm79B3o0Ir4saY51/u0S66PXXYf1CK3u/dBR8fIE893sRWA4vGX394emU3+ZO1HeaOmzPRfxNP/B2ZPnRgLXpuS0/u2r+ocV9w01vMBivixpjnXu0PHznHFd8fs0G8FdO3eKz5z3S3xuRvuiM7V3V1oBaB4rF6+JF76y+8dxDYI/7+rXzm/6O7zw3fdlHP4dOjYOS678e444/IbopMH9KJ8rGnW9e7UJT7/3TFx0ujrol2Hjjnfxs677h6fuvT6+OpPHoshR57sArcCvwbYBsbfd2cMP+7MqGjX3mH8g159B8TND+z43w2fNKMxFi3f8Z9/du2YivOPb5f3+9NS5/LrW66NGZOfaJNrufStOfHY2B/EqZ/7Wk7vX1ZWHoee9JkYftyZMWfapJg9dWIsmjsj1q9ZFevX1kQqnYoOHbtEVaeu0aP3HtFvv+FRvfOuRfe12ZbXoC0fa5p7vcsrKuOYsy6JQz55TsyaMiFmvTwhli+aH+tqVsbGutro0LlrdOrSLXbq1Tv67z8iBgweEbvsPqjV/qZAsV5fBaAIratZEQcvvCumDbraYVCynnv4V7HL7nvF8Gb83nlFu/ax34jjY78RxzvAFnqsmfSn38QxZ11SkNe7qlPXOOjY0z05sED4EUAbWD16VRw4+7aobFzrMChp99/+rXh10uMOIo8mPHBXbFi/zvVGASiE8I+IaNe4Jg6ce4cDoaQ1NWVi3K1fjmcfusdh5MmG2rXx7IO/dL1RAArJAfN+Hh02vucgKGnZbDb+dM8tcc9NV0XtmlVtdru1NSvjzVmeTBoRMfGRX0VtzcqSvt4oAEUx/X+gfFNdDH3jRw6GRJg1ZULccuXJMeEPd0fjxvpWC5/5M16M39xyXdx06XEx9RmvuxER0VC/IZ76/c9K5npnMpti+sRH/bihhXkSYBuF/wf2fXNMvDrw81Fb1cchUfLq69bFY2N/EBMeuCuGH3dGDD3q1Ojdf78d+pgbatfGvFdfiNlTJ8acqRNjzcplDvojvPDn38WRp18UO/X4WFFe72w2G4vnzYzXX3oqpox/IOe/REjuUlU99846hrYrAEnk5X63rJhe8KeldO3eK/rtNzz69N8/eu62Z1TvvGt0ru4eFe3aR3lFZTRu3Bgb69fHxrraqK9bH6uWL47lixfE8kULYvniebHs7fnR1JTxxVMy17s+6utqY8P6dbHq3UWxdOGceHfhnJg/86U2+zGGAoDwF/7CH0gMzwEQ/sJf+AMKAMJf+At/QAEAABQATP+mf9M/oAAg/IW/8AcUAABAATD9m/5N/6Z/QAEQ/sJf+AMoAJRw+CP8AQXA9J9Apn8ABUD4J2z6F/6mf0ABEP7CX/gDKAAAgAJg+jf9m/4BFADhL/yFP4ACAAAoAKZ/07/pH0ABEP7CX/gDKADCX/gLfwAFAABQAEz/pn/TP4ACIPyFv/AHUAAAQAHA9G/6N/0DCoDwF/7CX/gDCoDwF/7CX/gDCgAAoACY/k3/pn8ABUD4C3/hD6AAAAAKgOnf9G/6B1AAhL/wF/4ACoDwF/7CH0ABAAAUANO/6d/0D6AACH/hL/wBFAAAQAEw/Zv+Tf8ASS0Awl/4C3+AhBUA4S/8hT9AQjcAAECCCoDp3/Rv+gdIWAEQ/sJf+AMkdAMAACSoAJj+Tf+mf4BtFIC65W+khL/wF/4AyVG3/I1USW0AhL/wF/4AOW4AHAEAKACmf9O/6R9AARD+wl/4AygAAEDpFIBi/k0A07/p3/QPkLsPMr+oNwDCX/gLf4Ad2AAIf+Ev/AEUAAAgKQWgmJ4HYPo3/Zv+AZrvH7O+6DYAwl/4C3+AFtwAAAAJLQCF/mMA07/p3/QPsH02z/ii2QAIf+Ev/AFaaQMg/IW/8AdIaAEo5lcFBAD+2Udle8FvAEz/pn/TP0DL2+K0X9Vz76zjAYDSm/6LYgMAALQ8BQAAFIC/82RAAChuW8tyGwAAsAGwBQCAUp/+c9oAKAEAUFrhn1MBAABKT04FwBYAAEpn+rcBAAAbAFsAAEjC9N/sDYASAADFH/7NLgBKAAAUf/hvVwEAAIrfdhUAWwAAKN7pf4c2AEoAABRn+O9QAVACAKA4w3+HC4ASAADFF/4tUgCUAAAorvBvsQIAABSXFisAtgAAUBzTf0REq4R2Vc+9sy4TABTukJ0uljsKAMK/wAuAEgAAhZ2l6WK94wAg/Au0ACgBAFCY2dmm4ezJgQBQGENzulQ/MQAQ/gVSAJQAACiMbMxrGPuRAACCPz8KYhpXBAAQ/G0r7SAAIHmZV3DBaxsAgOBPYAFQBgAQ+gkvAIoAAII/wQVAGQBA6Ce8ACgDAAj9hBcAhQAAga8AKAYACPoc/X/fUkffVlRQBAAAAABJRU5ErkJggg==">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange: #f97316;
+      --blue: #3b82f6;
+      --navy: #0a1628;
+      --navy2: #0f1f3d;
+      --navy3: #162440;
+      --white: #ffffff;
+      --gray: #94a3b8;
+      --light: #e2e8f0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--navy);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      background: rgba(10,22,40,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(59,130,246,0.2);
+      padding: 0 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo img { height: 38px; border-radius: 8px; }
+    .nav-logo span { font-size: 1.2rem; font-weight: 700; color: var(--white); }
+    .nav-logo span em { color: var(--orange); font-style: normal; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: var(--gray); text-decoration: none; font-size: 0.95rem; transition: color .2s; }
+    .nav-links a:hover { color: var(--white); }
+    .nav-cta {
+      background: var(--orange); color: var(--white);
+      border: none; border-radius: 8px; padding: 0.5rem 1.2rem;
+      font-size: 0.9rem; font-weight: 600; cursor: pointer;
+      text-decoration: none; transition: opacity .2s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center;
+      padding: 100px 2rem 4rem;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(59,130,246,0.15) 0%, transparent 70%),
+                  radial-gradient(ellipse 40% 40% at 80% 60%, rgba(249,115,22,0.08) 0%, transparent 70%);
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233b82f6' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-inner { position: relative; max-width: 800px; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(249,115,22,0.1); border: 1px solid rgba(249,115,22,0.3);
+      border-radius: 20px; padding: 6px 16px; margin-bottom: 2rem;
+      font-size: 0.85rem; color: var(--orange); font-weight: 600;
+    }
+    .hero-badge span { font-size: 1rem; }
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 800; line-height: 1.15;
+      margin-bottom: 1.5rem;
+      animation: slideInDown 0.8s ease-out;
+    }
+    h1 em {
+      font-style: normal;
+      background: linear-gradient(135deg, var(--orange), var(--blue));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: glow 3s ease-in-out infinite;
+    }
+    @keyframes slideInDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes glow {
+      0%, 100% { filter: drop-shadow(0 0 0px rgba(249,115,22,0.5)); }
+      50% { filter: drop-shadow(0 0 20px rgba(249,115,22,0.8)); }
+    }
+    .hero p {
+      font-size: 1.2rem; color: var(--gray); max-width: 580px;
+      margin: 0 auto 2.5rem;
+    }
+    .hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--orange), #ea580c);
+      color: var(--white); border: none; border-radius: 10px;
+      padding: 0.85rem 2rem; font-size: 1rem; font-weight: 700;
+      cursor: pointer; text-decoration: none;
+      box-shadow: 0 4px 20px rgba(249,115,22,0.4);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 28px rgba(249,115,22,0.5); }
+    .btn-secondary {
+      background: transparent; color: var(--white);
+      border: 2px solid rgba(255,255,255,0.2); border-radius: 10px;
+      padding: 0.85rem 2rem; font-size: 1rem; font-weight: 600;
+      cursor: pointer; text-decoration: none; transition: border-color .2s;
+    }
+    .btn-secondary:hover { border-color: var(--blue); }
+
+    .hero-stats {
+      display: flex; gap: 3rem; justify-content: center;
+      margin-top: 4rem; flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat-num { font-size: 2rem; font-weight: 800; color: var(--orange); }
+    .stat-label { font-size: 0.85rem; color: var(--gray); }
+
+    /* ── SECTION BASE ── */
+    section { padding: 5rem 2rem; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-tag {
+      display: inline-block; background: rgba(59,130,246,0.1);
+      border: 1px solid rgba(59,130,246,0.3); border-radius: 20px;
+      padding: 4px 14px; font-size: 0.8rem; color: var(--blue);
+      font-weight: 600; margin-bottom: 1rem; letter-spacing: .05em; text-transform: uppercase;
+    }
+    h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 800; margin-bottom: 1rem; }
+    h2 em { font-style: normal; color: var(--orange); }
+    .section-sub { color: var(--gray); font-size: 1.05rem; max-width: 560px; }
+
+    /* ── FEATURES ── */
+    #funcionalidades { background: var(--navy2); }
+    .features-header { text-align: center; margin-bottom: 3.5rem; }
+    .features-header .section-sub { margin: 0 auto; }
+    .features-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .feature-card {
+      background: linear-gradient(135deg, var(--navy3), rgba(59,130,246,0.05));
+      border-radius: 14px;
+      padding: 1.8rem; border: 1px solid rgba(59,130,246,0.2);
+      transition: all .3s cubic-bezier(.34,1.56,.64,1);
+      position: relative; overflow: hidden;
+    }
+    .feature-card::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+      transform: translateX(-100%);
+    }
+    .feature-card:hover {
+      border-color: var(--orange);
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(249,115,22,0.2);
+    }
+    .feature-card:hover::before {
+      animation: shine .6s;
+    }
+    @keyframes shine {
+      to { transform: translateX(100%); }
+    }
+    .feature-icon {
+      width: 48px; height: 48px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; margin-bottom: 1rem;
+    }
+    .feature-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .feature-card p { font-size: 0.9rem; color: var(--gray); }
+
+    /* ── COMO FUNCIONA ── */
+    .steps { display: flex; gap: 2rem; margin-top: 3rem; flex-wrap: wrap; }
+    .step { flex: 1; min-width: 200px; position: relative; }
+    .step-num {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--orange), var(--blue));
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 1.1rem; margin-bottom: 1rem;
+    }
+    .step h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .step p { font-size: 0.9rem; color: var(--gray); }
+    .step-line {
+      position: absolute; top: 22px; left: 44px;
+      width: calc(100% - 44px); height: 2px;
+      background: linear-gradient(90deg, var(--orange), var(--blue));
+      opacity: 0.3;
+    }
+    .step:last-child .step-line { display: none; }
+
+    /* ── PLANOS ── */
+    #planos { background: var(--navy2); }
+    .plans-header { text-align: center; margin-bottom: 3rem; }
+    .plans-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem; max-width: 780px; margin: 0 auto;
+    }
+    .plan-card {
+      background: linear-gradient(135deg, var(--navy3), rgba(59,130,246,0.03));
+      border-radius: 16px; padding: 2.2rem;
+      border: 1px solid rgba(255,255,255,0.07);
+      display: flex; flex-direction: column;
+      transition: all .3s cubic-bezier(.34,1.56,.64,1);
+      position: relative;
+    }
+    .plan-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 30px 60px rgba(59,130,246,0.2);
+      border-color: rgba(59,130,246,0.4);
+    }
+    .plan-card.featured {
+      border-color: var(--orange);
+      background: linear-gradient(135deg, rgba(249,115,22,0.08), rgba(59,130,246,0.05));
+      position: relative;
+    }
+    .plan-badge {
+      position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--orange), #ea580c);
+      border-radius: 20px; padding: 4px 14px;
+      font-size: 0.75rem; font-weight: 700; white-space: nowrap;
+    }
+    .plan-name { font-size: 0.85rem; font-weight: 600; color: var(--gray); text-transform: uppercase; letter-spacing: .07em; margin-bottom: 0.8rem; }
+    .plan-price { margin-bottom: 1.5rem; }
+    .plan-price .currency { font-size: 1.2rem; font-weight: 700; color: var(--orange); vertical-align: top; line-height: 2; }
+    .plan-price .amount { font-size: 3rem; font-weight: 800; color: var(--white); }
+    .plan-price .period { font-size: 0.9rem; color: var(--gray); }
+    .plan-features { list-style: none; margin-bottom: 2rem; flex: 1; }
+    .plan-features li {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 0.5rem 0; font-size: 0.9rem; color: var(--light);
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .plan-features li:last-child { border-bottom: none; }
+    .plan-features .check { color: #22c55e; font-size: 1rem; flex-shrink: 0; margin-top: 2px; }
+    .plan-features .x { color: #ef4444; font-size: 1rem; flex-shrink: 0; margin-top: 2px; }
+    .plan-btn {
+      display: block; text-align: center; text-decoration: none;
+      padding: 0.8rem; border-radius: 10px; font-weight: 700; font-size: 0.95rem;
+      transition: opacity .2s, transform .2s;
+    }
+    .plan-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+    .plan-btn.orange { background: linear-gradient(135deg, var(--orange), #ea580c); color: var(--white); }
+    .plan-btn.blue { background: linear-gradient(135deg, var(--blue), #2563eb); color: var(--white); }
+
+    /* ── IA SECTION ── */
+    .ia-section {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 4rem; align-items: center;
+    }
+    .ia-chat-preview {
+      background: var(--navy3); border-radius: 16px; padding: 1.5rem;
+      border: 1px solid rgba(59,130,246,0.2);
+    }
+    .chat-header {
+      display: flex; align-items: center; gap: 10px;
+      padding-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.07);
+      margin-bottom: 1rem;
+    }
+    .chat-dot { width: 8px; height: 8px; border-radius: 50%; }
+    .chat-dot.red { background: #ef4444; }
+    .chat-dot.yellow { background: #f59e0b; }
+    .chat-dot.green { background: #22c55e; }
+    .chat-title { font-size: 0.85rem; color: var(--gray); margin-left: 4px; }
+    .msg { display: flex; gap: 10px; margin-bottom: 1rem; align-items: flex-start; }
+    .msg.user { flex-direction: row-reverse; }
+    .msg-avatar {
+      width: 30px; height: 30px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.75rem; font-weight: 700; flex-shrink: 0;
+    }
+    .msg-avatar.ai { background: linear-gradient(135deg, var(--blue), #1d4ed8); }
+    .msg-avatar.user { background: linear-gradient(135deg, var(--orange), #ea580c); }
+    .msg-bubble {
+      background: rgba(255,255,255,0.06); border-radius: 12px;
+      padding: 0.7rem 1rem; font-size: 0.85rem; max-width: 75%;
+    }
+    .msg.user .msg-bubble { background: rgba(249,115,22,0.15); }
+    .typing { display: flex; gap: 4px; padding: 0.7rem 1rem; }
+    .typing-dot {
+      width: 6px; height: 6px; border-radius: 50%; background: var(--blue);
+      animation: bounce 1.2s infinite;
+    }
+    .typing-dot:nth-child(2) { animation-delay: .2s; }
+    .typing-dot:nth-child(3) { animation-delay: .4s; }
+    @keyframes bounce {
+      0%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-6px); }
+    }
+
+    /* ── CONTACT ── */
+    #contato { background: var(--navy); }
+    .contact-wrapper {
+      max-width: 640px; margin: 0 auto; text-align: center;
+    }
+    .contact-wrapper h2 { margin-bottom: 1rem; }
+    .contact-wrapper .section-sub { margin: 0 auto 2.5rem; }
+    .contact-box {
+      background: var(--navy3); border-radius: 16px; padding: 2.5rem;
+      border: 1px solid rgba(59,130,246,0.2);
+    }
+    .contact-email {
+      display: flex; align-items: center; justify-content: center; gap: 12px;
+      background: linear-gradient(135deg, var(--blue), #2563eb);
+      border: 1px solid rgba(59,130,246,0.3);
+      border-radius: 10px; padding: 1rem 1.5rem; margin-bottom: 1.5rem;
+      font-size: 1rem; color: var(--white); font-weight: 600;
+      text-decoration: none; transition: background .2s, transform .2s; cursor: pointer;
+    }
+    .contact-email:hover { background: linear-gradient(135deg, #2563eb, #1d4ed8); transform: translateY(-2px); }
+    .contact-email .icon { font-size: 1.3rem; }
+
+    /* ── CAROUSEL SCROLLING ── */
+    .feature-carousel {
+      overflow: hidden; background: linear-gradient(135deg, rgba(249,115,22,0.08), rgba(59,130,246,0.08));
+      border-radius: 16px; padding: 2rem; margin: 3rem 0;
+      border: 1px solid rgba(59,130,246,0.2);
+    }
+    .carousel-track {
+      display: flex; gap: 2rem;
+      animation: scroll 30s linear infinite;
+      width: max-content;
+    }
+    .carousel-item {
+      flex: 0 0 280px; background: var(--navy3);
+      border-radius: 12px; padding: 1.5rem;
+      border: 1px solid rgba(255,255,255,0.05);
+      display: flex; flex-direction: column; justify-content: center;
+      text-align: center;
+    }
+    .carousel-item .emoji { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .carousel-item .title { font-weight: 700; margin-bottom: 0.4rem; color: var(--orange); }
+    .carousel-item .desc { font-size: 0.9rem; color: var(--gray); }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .carousel-track:hover { animation-play-state: paused; }
+    .plan-options {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;
+    }
+    .plan-option {
+      border: 2px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 1rem;
+      text-decoration: none; color: var(--white); transition: border-color .2s;
+    }
+    .plan-option:hover { border-color: var(--orange); }
+    .plan-option .plan-opt-name { font-weight: 700; font-size: 0.95rem; }
+    .plan-option .plan-opt-price { color: var(--orange); font-size: 0.85rem; margin-top: 3px; }
+    .contact-hint { font-size: 0.85rem; color: var(--gray); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #060e1c; border-top: 1px solid rgba(255,255,255,0.05);
+      padding: 2.5rem 2rem; text-align: center;
+    }
+    .footer-logo { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 1rem; }
+    .footer-logo img { height: 32px; border-radius: 6px; }
+    .footer-logo span { font-weight: 700; font-size: 1rem; }
+    footer p { color: var(--gray); font-size: 0.85rem; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .ia-section { grid-template-columns: 1fr; }
+      .steps { flex-direction: column; }
+      .step-line { display: none; }
+      .plan-options { grid-template-columns: 1fr; }
+    }
+
+    .contact-whatsapp {
+      display: flex; align-items: center; justify-content: center; gap: 12px;
+      background: rgba(37,211,102,0.1); border: 1px solid rgba(37,211,102,0.3);
+      border-radius: 10px; padding: 1rem 1.5rem; margin-bottom: 1rem;
+      font-size: 1rem; color: #25d366; font-weight: 600;
+      text-decoration: none; transition: background .2s;
+    }
+    .contact-whatsapp:hover { background: rgba(37,211,102,0.18); }
+
+/* ── MASCOTE ── */
+#mascote-wrapper {
+  position: fixed;
+  bottom: 90px;
+  right: 28px;
+  z-index: 998;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  pointer-events: none;
+}
+
+/* Balão de fala */
+#mascote-bubble {
+  background: #ffffff;
+  color: #0a1628;
+  border-radius: 16px 16px 4px 16px;
+  padding: 12px 16px;
+  max-width: 220px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.45;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  pointer-events: auto;
+  cursor: default;
+  position: relative;
+  transform-origin: bottom right;
+  animation: bubblePop .35s cubic-bezier(.34,1.56,.64,1) forwards;
+}
+#mascote-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: 18px;
+  border: 8px solid transparent;
+  border-top-color: #ffffff;
+  border-bottom: 0;
+  border-right: 0;
+}
+#mascote-bubble .bubble-emoji {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+#mascote-bubble .bubble-close {
+  position: absolute;
+  top: 6px; right: 8px;
+  background: none; border: none;
+  color: #94a3b8; cursor: pointer;
+  font-size: 0.8rem; line-height: 1;
+  pointer-events: auto;
+}
+#mascote-bubble .bubble-close:hover { color: #0a1628; }
+
+/* O boneco */
+#mascote-bot {
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  pointer-events: auto;
+  position: relative;
+  filter: drop-shadow(0 4px 12px rgba(249,115,22,0.4));
+  transition: filter .2s;
+  flex-shrink: 0;
+}
+#mascote-bot:hover {
+  filter: drop-shadow(0 6px 18px rgba(249,115,22,0.65));
+}
+#mascote-bot svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Bolinha de notificação */
+#mascote-notif {
+  position: absolute;
+  top: -4px; right: -4px;
+  width: 16px; height: 16px;
+  background: #f97316;
+  border-radius: 50%;
+  border: 2px solid var(--navy);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.6rem; font-weight: 800; color: white;
+  animation: notifPulse 1.5s ease-in-out infinite;
+}
+
+/* Animações */
+@keyframes bubblePop {
+  from { transform: scale(0.5); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+@keyframes notifPulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.25); }
+}
+@keyframes botFloat {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-5px); }
+}
+@keyframes botWave {
+  0%   { transform: rotate(0deg); }
+  15%  { transform: rotate(20deg); }
+  30%  { transform: rotate(-10deg); }
+  45%  { transform: rotate(15deg); }
+  60%  { transform: rotate(-5deg); }
+  75%  { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+@keyframes eyeBlink {
+  0%, 90%, 100% { transform: scaleY(1); }
+  95%            { transform: scaleY(0.1); }
+}
+@keyframes typingDots {
+  0%, 80%, 100% { opacity: 0.2; transform: translateY(0); }
+  40%            { opacity: 1; transform: translateY(-4px); }
+}
+
+#mascote-bot {
+  animation: botFloat 3s ease-in-out infinite, botDance 8s ease-in-out infinite;
+}
+
+.eye-left, .eye-right {
+  animation: eyeBlink 4s ease-in-out infinite;
+  transform-origin: center;
+}
+.eye-right { animation-delay: 0.1s; }
+
+@keyframes botDance {
+  0%, 100% { transform: translateY(0) rotateZ(0deg); }
+  25% { transform: translateY(-8px) rotateZ(-3deg); }
+  50% { transform: translateY(0) rotateZ(3deg); }
+  75% { transform: translateY(-6px) rotateZ(-2deg); }
+}
+
+#arm-right {
+  transform-origin: 52px 38px;
+}
+.mascote-waving #arm-right {
+  animation: botWave 1s ease-in-out;
+}
+
+@media (max-width: 480px) {
+  #mascote-wrapper { bottom: 100px; right: 16px; }
+  #mascote-bubble { max-width: 180px; font-size: 0.8rem; }
+  #mascote-bot { width: 52px; height: 52px; }
+}
+
+/* ── CONTADOR ANIMADO ── */
+.stats-bar {
+  background: linear-gradient(135deg, #0f1f3d, #162440);
+  border-top: 1px solid rgba(249,115,22,0.2);
+  border-bottom: 1px solid rgba(249,115,22,0.2);
+  padding: 2.5rem 2rem;
+}
+.stats-bar-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; justify-content: center;
+  gap: 4rem; flex-wrap: wrap;
+}
+.stat-counter { text-align: center; }
+.stat-counter .num {
+  font-size: 2.6rem; font-weight: 800;
+  background: linear-gradient(135deg, #f97316, #3b82f6);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+}
+.stat-counter .lbl { font-size: 0.85rem; color: #94a3b8; margin-top: 4px; }
+
+/* ── CRONÔMETRO ── */
+.oferta-bar {
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  padding: 0.7rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  position: sticky;
+  top: 64px;
+  z-index: 99;
+}
+.oferta-bar span { margin: 0 4px; }
+#timer-display {
+  font-weight: 800;
+  background: rgba(0,0,0,0.2);
+  padding: 2px 10px;
+  border-radius: 6px;
+  letter-spacing: 1px;
+}
+
+/* ── APP PREVIEW ── */
+.app-preview-section { background: var(--navy2); }
+.app-preview-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 4rem; align-items: center;
+}
+.app-screen {
+  background: #0f172a;
+  border-radius: 16px;
+  border: 1px solid rgba(59,130,246,0.25);
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(59,130,246,0.2);
+  animation: screenGlow 3s ease-in-out infinite;
+}
+@keyframes screenGlow {
+  0%, 100% { box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(59,130,246,0.2); }
+  50% { box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 60px rgba(59,130,246,0.4), 0 0 80px rgba(249,115,22,0.2); }
+}
+.app-topbar {
+  background: #162440;
+  padding: 10px 16px;
+  display: flex; align-items: center; gap: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.app-dot { width:10px;height:10px;border-radius:50%; }
+.app-url { flex:1; background: #0a1628; border-radius:6px; padding:4px 12px; font-size:.75rem; color:#475569; }
+.app-body { padding: 1.2rem; }
+.app-saldo-card {
+  background: linear-gradient(135deg, #f97316, #3b82f6);
+  border-radius: 12px; padding: 1.2rem; margin-bottom: 1rem;
+  animation: cardPulse 2s ease-in-out infinite, slideInLeft 0.8s ease-out;
+  box-shadow: 0 10px 30px rgba(249,115,22,0.3);
+}
+@keyframes cardPulse {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+@keyframes slideInLeft {
+  from { transform: translateX(-30px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+}
+.app-saldo-label { font-size:.75rem; color:rgba(255,255,255,.75); margin-bottom:4px; }
+.app-saldo-value { font-size:1.8rem; font-weight:800; color:white; }
+.app-saldo-sub { font-size:.75rem; color:rgba(255,255,255,.7); margin-top:4px; display:flex; gap:1rem; }
+.app-row { display:grid; grid-template-columns:1fr 1fr; gap:.8rem; margin-bottom:.8rem; }
+.app-mini-card {
+  background: #162440; border-radius:10px; padding:.9rem;
+  border: 1px solid rgba(255,255,255,.06);
+}
+.app-mini-label { font-size:.7rem; color:#94a3b8; margin-bottom:4px; }
+.app-mini-value { font-size:1.1rem; font-weight:700; }
+.app-lancamentos { background:#162440; border-radius:10px; overflow:hidden; border:1px solid rgba(255,255,255,.06); }
+.app-lanc-header { padding:.7rem 1rem; font-size:.75rem; color:#94a3b8; border-bottom:1px solid rgba(255,255,255,.05); }
+.app-lanc-item {
+  display:flex; align-items:center; gap:10px;
+  padding:.6rem 1rem; border-bottom:1px solid rgba(255,255,255,.04);
+  font-size:.8rem;
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+.app-lanc-item:nth-child(2) { animation-delay: 0.3s; }
+.app-lanc-item:nth-child(3) { animation-delay: 0.5s; }
+.app-lanc-item:nth-child(4) { animation-delay: 0.7s; }
+@keyframes fadeInUp {
+  from { transform: translateY(15px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.app-lanc-item:last-child { border-bottom:none; }
+.app-lanc-icon { width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0; }
+.app-lanc-desc { flex:1; }
+.app-lanc-cat { font-size:.65rem; color:#94a3b8; }
+
+/* ── COMPARAÇÃO ── */
+.compare-table { width:100%; border-collapse:collapse; margin-top:2rem; }
+.compare-table th {
+  padding:.9rem 1.2rem; text-align:center; font-size:.85rem; font-weight:700;
+  background: #162440;
+}
+.compare-table th:first-child { text-align:left; }
+.compare-table th.highlight { background: rgba(249,115,22,.15); color:var(--orange); border-top:2px solid var(--orange); }
+.compare-table td {
+  padding:.8rem 1.2rem; font-size:.85rem; text-align:center;
+  border-bottom:1px solid rgba(255,255,255,.05); color:var(--gray);
+}
+.compare-table td:first-child { text-align:left; color:var(--white); font-weight:500; }
+.compare-table td.highlight { background:rgba(249,115,22,.05); }
+.compare-table tr:hover td { background:rgba(255,255,255,.02); }
+.c-yes { color:#22c55e; font-size:1.1rem; }
+.c-no  { color:#ef4444; font-size:1.1rem; }
+.c-partial { color:#f59e0b; font-size:.8rem; }
+
+/* ── DEPOIMENTOS ── */
+.testimonials-grid {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.5rem; margin-top:2.5rem;
+}
+.testimonial-card {
+  background:var(--navy3); border-radius:14px; padding:1.6rem;
+  border:1px solid rgba(255,255,255,.06);
+  transition:border-color .2s, transform .2s;
+}
+.testimonial-card:hover { border-color:rgba(249,115,22,.3); transform:translateY(-3px); }
+.test-stars { color:#f59e0b; font-size:1rem; margin-bottom:.8rem; letter-spacing:2px; }
+.test-text { font-size:.9rem; color:var(--light); line-height:1.6; margin-bottom:1.2rem; font-style:italic; }
+.test-author { display:flex; align-items:center; gap:12px; }
+.test-avatar {
+  width:40px;height:40px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:1rem;flex-shrink:0;
+}
+.test-name { font-weight:700; font-size:.9rem; }
+.test-role { font-size:.75rem; color:var(--gray); }
+
+/* ── FAQ ── */
+#faq { background:var(--navy2); }
+.faq-list { max-width:720px; margin:2.5rem auto 0; display:flex; flex-direction:column; gap:.8rem; }
+.faq-item {
+  background:var(--navy3); border-radius:12px;
+  border:1px solid rgba(255,255,255,.06);
+  overflow:hidden; cursor:pointer;
+  transition:border-color .2s;
+}
+.faq-item:hover { border-color:rgba(59,130,246,.3); }
+.faq-item.open { border-color:rgba(249,115,22,.3); }
+.faq-q {
+  display:flex; justify-content:space-between; align-items:center;
+  padding:1.1rem 1.4rem; font-weight:600; font-size:.95rem;
+  user-select:none;
+}
+.faq-icon { font-size:1.2rem; transition:transform .3s; color:var(--orange); flex-shrink:0; }
+.faq-item.open .faq-icon { transform:rotate(45deg); }
+.faq-a {
+  max-height:0; overflow:hidden;
+  transition:max-height .35s ease, padding .35s;
+  font-size:.9rem; color:var(--gray); line-height:1.6;
+  padding:0 1.4rem;
+}
+.faq-item.open .faq-a { max-height:200px; padding:.2rem 1.4rem 1.2rem; }
+
+/* ── APP DASHBOARD CARDS ── */
+.app-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.app-stat-card {
+  background: #1a2849;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.app-stat-card:nth-child(1) { animation-delay: 0.1s; }
+.app-stat-card:nth-child(2) { animation-delay: 0.2s; }
+.app-stat-card:nth-child(3) { animation-delay: 0.3s; }
+.app-stat-card:nth-child(4) { animation-delay: 0.4s; }
+
+.app-stat-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1), transparent);
+  animation: glow 3s ease-in-out infinite;
+}
+
+.app-stat-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.app-stat-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: #94a3b8;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.app-stat-value {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.app-stat-sub {
+  font-size: 0.7rem;
+  color: #64748b;
+  line-height: 1.3;
+}
+
+/* ── CHART SECTION ── */
+.app-chart-section {
+  margin-top: 1.5rem;
+  padding: 1rem 0;
+}
+
+.app-chart-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.app-chart-bar {
+  margin-bottom: 1.2rem;
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.app-chart-bar:nth-child(2) { animation-delay: 0.5s; }
+.app-chart-bar:nth-child(3) { animation-delay: 0.65s; }
+.app-chart-bar:nth-child(4) { animation-delay: 0.8s; }
+.app-chart-bar:nth-child(5) { animation-delay: 0.95s; }
+
+.app-bar-label {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-bottom: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-bar-container {
+  height: 6px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+}
+
+.app-bar {
+  height: 100%;
+  border-radius: 3px;
+  width: 0%;
+}
+
+@keyframes barFill {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.app-bar-value {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+@keyframes glow {
+  0%, 100% { opacity: 0; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">
+    <img src="data:image/png;base64,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" alt="BFL Intelligence">
+    <span>Ben<em>Finance</em></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#funcionalidades">Funcionalidades</a></li>
+    <li><a href="#como-funciona">Como funciona</a></li>
+    <li><a href="#planos">Planos</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <a href="https://benjamimmuniz-cmd.github.io/benfinance/" target="_blank" rel="noopener" class="nav-cta">Acessar o App</a>
+</nav>
+
+
+<!-- OFERTA BAR -->
+<div class="oferta-bar">
+  🔥 Oferta especial de lançamento — Assine agora e economize!
+  <span>&nbsp;|&nbsp;</span>Expira em: <span id="timer-display">23:59:59</span>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-badge"><span>🚀</span> Novo: Chat com Inteligência Artificial</div>
+    <h1>Sua vida financeira<br>sob <em>total controle</em></h1>
+    <p>BenFinance é o sistema de gestão financeira criado pela BFL Intelligence para quem quer clareza, organização e inteligência no dia a dia.</p>
+    <div class="hero-btns">
+      <a href="https://benjamimmuniz-cmd.github.io/benfinance/" target="_blank" rel="noopener" class="btn-primary">Acessar o BenFinance 🚀</a>
+      <a href="#funcionalidades" class="btn-secondary">Ver funcionalidades</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Sincronizado na nuvem</div></div>
+      <div class="stat"><div class="stat-num">0</div><div class="stat-label">Planilha necessária</div></div>
+      <div class="stat"><div class="stat-num">IA</div><div class="stat-label">Assistente financeiro</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-bar-inner">
+    <div class="stat-counter"><span class="num" data-target="143">0</span><div class="lbl">Clientes ativos</div></div>
+    <div class="stat-counter"><span class="num" data-target="4800000" data-prefix="R$&nbsp;" data-suffix="M">R$&nbsp;0</span><div class="lbl">Gerenciados no total</div></div>
+    <div class="stat-counter"><span class="num" data-target="98" data-suffix="%">0%</span><div class="lbl">Satisfação dos clientes</div></div>
+    <div class="stat-counter"><span class="num" data-target="24" data-suffix="h">0h</span><div class="lbl">Suporte em até</div></div>
+  </div>
+</div>
+
+<section id="funcionalidades"
+<section id="funcionalidades">
+  <div class="section-inner">
+    <div class="features-header">
+      <div class="section-tag">Funcionalidades</div>
+      <h2>Tudo que você precisa<br>em <em>um só lugar</em></h2>
+      <p class="section-sub">Do lançamento simples ao parcelamento automático, o BenFinance cobre cada detalhe das suas finanças.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon" style="background:rgba(249,115,22,0.1)">💰</div>
+        <h3>Receitas e Despesas</h3>
+        <p>Lance entradas e saídas com categoria, descrição e data. Visualize o saldo em tempo real no dashboard.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:rgba(59,130,246,0.1)">📅</div>
+        <h3>Parcelamento Automático</h3>
+        <p>Registre uma compra parcelada uma vez e o sistema distribui as parcelas automaticamente nos meses corretos.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:rgba(34,197,94,0.1)">💳</div>
+        <h3>Gerenciar Cartões</h3>
+        <p>Cadastre seus cartões de crédito e acompanhe o gasto em cada um separadamente com limite e vencimento.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:rgba(168,85,247,0.1)">📊</div>
+        <h3>Extrato Mensal</h3>
+        <p>Visualize todos os lançamentos do mês filtrados por categoria, tipo ou cartão. Com gráficos e resumos.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:rgba(249,115,22,0.1)">☁️</div>
+        <h3>Sincronização em Nuvem</h3>
+        <p>Seus dados ficam salvos na nuvem e sincronizados em tempo real. Acesse do notebook, desktop ou qualquer dispositivo.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:rgba(59,130,246,0.1)">🤖</div>
+        <h3>Chat com IA <span style="font-size:.75rem;color:var(--orange);background:rgba(249,115,22,.1);padding:2px 8px;border-radius:10px;margin-left:4px">Premium</span></h3>
+        <p>Converse com a inteligência artificial para tirar dúvidas, pedir análises dos seus gastos e receber dicas personalizadas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona">
+  <div class="section-inner">
+    <div class="section-tag">Como funciona</div>
+    <h2>Simples de usar,<br><em>poderoso</em> nos resultados</h2>
+    <p class="section-sub">Em poucos minutos você já está com as finanças organizadas.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-line"></div>
+        <h3>Crie sua conta</h3>
+        <p>Cadastro rápido com e-mail e senha. Nenhuma instalação necessária.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-line"></div>
+        <h3>Lance seus dados</h3>
+        <p>Adicione receitas, despesas e cartões. O sistema organiza tudo automaticamente.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-line"></div>
+        <h3>Acompanhe o dashboard</h3>
+        <p>Veja saldo, gráficos e resumos do mês atualizados em tempo real.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h3>Tome decisões melhores</h3>
+        <p>Com o histórico em mãos, planejar e economizar fica muito mais fácil.</p>
+      </div>
+    </div>
+
+    <!-- CAROUSEL SCROLLING -->
+    <div class="feature-carousel">
+      <div class="carousel-track">
+        <div class="carousel-item">
+          <div class="emoji">💰</div>
+          <div class="title">Controle Total</div>
+          <div class="desc">Gerencie receitas e despesas em tempo real</div>
+        </div>
+        <div class="carousel-item">
+          <div class="emoji">💳</div>
+          <div class="title">Cartões Múltiplos</div>
+          <div class="desc">Adicione quantos cartões precisar</div>
+        </div>
+        <div class="carousel-item">
+          <div class="emoji">📊</div>
+          <div class="title">Relatórios</div>
+          <div class="desc">Veja extratos detalhados por período</div>
+        </div>
+        <div class="carousel-item">
+          <div class="emoji">🤖</div>
+          <div class="title">IA Inteligente</div>
+          <div class="desc">Chat que analisa seus gastos e dá dicas</div>
+        </div>
+        <div class="carousel-item">
+          <div class="emoji">📱</div>
+          <div class="title">Em Qualquer Lugar</div>
+          <div class="desc">Acesse do celular, tablet ou computador</div>
+        </div>
+        <div class="carousel-item">
+          <div class="emoji">🔒</div>
+          <div class="title">Segurança</div>
+          <div class="desc">Seus dados sincronizados com segurança</div>
+        </div>
+        <!-- Repetir para scroll contínuo -->
+        <div class="carousel-item">
+          <div class="emoji">💰</div>
+          <div class="title">Controle Total</div>
+          <div class="desc">Gerencie receitas e despesas em tempo real</div>
+        </div>
+        <div class="carousel-item">
+          <div class="emoji">💳</div>
+          <div class="title">Cartões Múltiplos</div>
+          <div class="desc">Adicione quantos cartões precisar</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IA SECTION -->
+<section style="background:var(--navy2)">
+  <div class="section-inner">
+    <div class="ia-section">
+      <div>
+        <div class="section-tag">Exclusivo Premium</div>
+        <h2>Seu <em>assistente financeiro</em> com IA</h2>
+        <p style="color:var(--gray);margin-bottom:1.5rem">No plano Premium você tem acesso ao chat com inteligência artificial integrado ao BenFinance. Pergunte sobre seus gastos, peça análises e receba orientações personalizadas.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.8rem">
+          <li style="display:flex;gap:10px;align-items:center;font-size:.95rem"><span style="color:#22c55e;font-size:1.1rem">✓</span> "Quanto gastei em alimentação esse mês?"</li>
+          <li style="display:flex;gap:10px;align-items:center;font-size:.95rem"><span style="color:#22c55e;font-size:1.1rem">✓</span> "Qual meu cartão com mais gasto?"</li>
+          <li style="display:flex;gap:10px;align-items:center;font-size:.95rem"><span style="color:#22c55e;font-size:1.1rem">✓</span> "Me dê dicas para economizar"</li>
+          <li style="display:flex;gap:10px;align-items:center;font-size:.95rem"><span style="color:#22c55e;font-size:1.1rem">✓</span> "Como está minha saúde financeira?"</li>
+        </ul>
+      </div>
+      <div class="ia-chat-preview">
+        <div class="chat-header">
+          <div class="chat-dot red"></div><div class="chat-dot yellow"></div><div class="chat-dot green"></div>
+          <span class="chat-title">BenFinance IA</span>
+        </div>
+        <div class="msg user">
+          <div class="msg-avatar user">Eu</div>
+          <div class="msg-bubble">Quanto gastei com despesas fixas esse mês?</div>
+        </div>
+        <div class="msg">
+          <div class="msg-avatar ai">IA</div>
+          <div class="msg-bubble">Você gastou <strong style="color:var(--orange)">R$ 2.340,00</strong> em despesas fixas em junho. Os maiores gastos foram: aluguel (R$ 1.200), internet (R$ 120) e academia (R$ 89). 📊</div>
+        </div>
+        <div class="msg user">
+          <div class="msg-avatar user">Eu</div>
+          <div class="msg-bubble">E como está meu saldo do mês?</div>
+        </div>
+        <div class="msg">
+          <div class="msg-avatar ai">IA</div>
+          <div class="msg-bubble" style="display:flex;gap:8px;align-items:center">
+            <span>Analisando seus dados</span>
+            <div class="typing"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- APP PREVIEW -->
+<section class="app-preview-section" style="padding:5rem 2rem">
+  <div class="app-preview-inner">
+    <div>
+      <div class="section-tag">Veja o app</div>
+      <h2>Interface <em>limpa</em> e intuitiva</h2>
+      <p style="color:var(--gray);margin:1rem 0 1.5rem">Dashboard completo com saldo em tempo real, gráficos de gastos e os últimos lançamentos. Tudo visível em um só lugar.</p>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:.8rem">
+        <li style="display:flex;gap:10px;align-items:center;font-size:.95rem"><span style="color:#22c55e;font-size:1.1rem">✓</span> Saldo atualizado em tempo real</li>
+        <li style="display:flex;gap:10px;align-items:center;font-size:.95rem"><span style="color:#22c55e;font-size:1.1rem">✓</span> Gráficos de receitas x despesas</li>
+        <li style="display:flex;gap:10px;align-items:center;font-size:.95rem"><span style="color:#22c55e;font-size:1.1rem">✓</span> Últimos lançamentos na tela inicial</li>
+        <li style="display:flex;gap:10px;align-items:center;font-size:.95rem"><span style="color:#22c55e;font-size:1.1rem">✓</span> Tema escuro elegante</li>
+      </ul>
+    </div>
+    <div class="app-screen">
+      <div class="app-topbar">
+        <div class="app-dot" style="background:#ef4444"></div>
+        <div class="app-dot" style="background:#f59e0b"></div>
+        <div class="app-dot" style="background:#22c55e"></div>
+        <div class="app-url">BenFinance — Dashboard</div>
+      </div>
+      <div class="app-body">
+        <!-- CARDS SUPERIORES -->
+        <div class="app-cards-grid">
+          <div class="app-stat-card" style="border-left: 4px solid #22c55e;">
+            <div class="app-stat-icon">↑</div>
+            <div class="app-stat-label">RECEITAS</div>
+            <div class="app-stat-value" style="color:#22c55e;" data-value="2900">R$ 2.900,00</div>
+            <div class="app-stat-sub">2 entradas em este mês</div>
+          </div>
+          <div class="app-stat-card" style="border-left: 4px solid #ef4444;">
+            <div class="app-stat-icon">↓</div>
+            <div class="app-stat-label">DESPESAS</div>
+            <div class="app-stat-value" style="color:#ef4444;" data-value="1231.90">R$ 1.231,90</div>
+            <div class="app-stat-sub">7 saídas em este mês</div>
+          </div>
+          <div class="app-stat-card" style="border-left: 4px solid #f97316;">
+            <div class="app-stat-icon">★</div>
+            <div class="app-stat-label">LUCRO LÍQUIDO</div>
+            <div class="app-stat-value" style="color:#f97316;" data-value="1668.10">R$ 1.668,10</div>
+            <div class="app-stat-sub">57,5% margem</div>
+          </div>
+          <div class="app-stat-card" style="border-left: 4px solid #a78bfa;">
+            <div class="app-stat-icon">💳</div>
+            <div class="app-stat-label">GASTO CARTÕES</div>
+            <div class="app-stat-value" style="color:#a78bfa;" data-value="489.90">R$ 489,90</div>
+            <div class="app-stat-sub">3 lançamento(s) este mês</div>
+          </div>
+        </div>
+
+        <!-- GRÁFICO FLUXO DE CAIXA -->
+        <div class="app-chart-section">
+          <div class="app-chart-title">⚡ PAINEL FINANCEIRO</div>
+          <div class="app-chart-bar">
+            <div class="app-bar-label">Receitas</div>
+            <div class="app-bar-container">
+              <div class="app-bar" style="width: 100%; background: linear-gradient(90deg, #22c55e, #16a34a); animation: barFill 1.5s ease-out 0.3s forwards;"></div>
+            </div>
+            <div class="app-bar-value" style="color: #22c55e;">R$ 2.900,00</div>
+          </div>
+          <div class="app-chart-bar">
+            <div class="app-bar-label">Despesas</div>
+            <div class="app-bar-container">
+              <div class="app-bar" style="width: 42%; background: linear-gradient(90deg, #ef4444, #dc2626); animation: barFill 1.5s ease-out 0.5s forwards;"></div>
+            </div>
+            <div class="app-bar-value" style="color: #ef4444;">R$ 1.231,90</div>
+          </div>
+          <div class="app-chart-bar">
+            <div class="app-bar-label">Cartões</div>
+            <div class="app-bar-container">
+              <div class="app-bar" style="width: 17%; background: linear-gradient(90deg, #a78bfa, #9333ea); animation: barFill 1.5s ease-out 0.7s forwards;"></div>
+            </div>
+            <div class="app-bar-value" style="color: #a78bfa;">R$ 489,90</div>
+          </div>
+          <div class="app-chart-bar">
+            <div class="app-bar-label">Lucro Líquido</div>
+            <div class="app-bar-container">
+              <div class="app-bar" style="width: 58%; background: linear-gradient(90deg, #f97316, #ea580c); animation: barFill 1.5s ease-out 0.9s forwards;"></div>
+            </div>
+            <div class="app-bar-value" style="color: #f97316;">R$ 1.668,10</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- COMPARAÇÃO -->
+<section style="padding:5rem 2rem;background:var(--navy)">
+  <div class="section-inner">
+    <div class="features-header">
+      <div class="section-tag">Comparação</div>
+      <h2>Por que <em>BenFinance</em>?</h2>
+      <p class="section-sub" style="margin:0 auto">Veja como nos comparamos às alternativas mais usadas.</p>
+    </div>
+    <div style="overflow-x:auto;margin-top:2rem">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Funcionalidade</th>
+            <th class="highlight">BenFinance ✦</th>
+            <th>Planilha Excel</th>
+            <th>Apps genéricos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sincronização em nuvem</td>
+            <td class="highlight"><span class="c-yes">✓</span></td>
+            <td><span class="c-no">✗</span></td>
+            <td><span class="c-yes">✓</span></td>
+          </tr>
+          <tr>
+            <td>Parcelamento automático</td>
+            <td class="highlight"><span class="c-yes">✓</span></td>
+            <td><span class="c-no">✗</span></td>
+            <td><span class="c-partial">Parcial</span></td>
+          </tr>
+          <tr>
+            <td>Chat com Inteligência Artificial</td>
+            <td class="highlight"><span class="c-yes">✓</span></td>
+            <td><span class="c-no">✗</span></td>
+            <td><span class="c-no">✗</span></td>
+          </tr>
+          <tr>
+            <td>Gestão de múltiplos cartões</td>
+            <td class="highlight"><span class="c-yes">✓</span></td>
+            <td><span class="c-partial">Manual</span></td>
+            <td><span class="c-partial">Parcial</span></td>
+          </tr>
+          <tr>
+            <td>Extrato mensal detalhado</td>
+            <td class="highlight"><span class="c-yes">✓</span></td>
+            <td><span class="c-partial">Manual</span></td>
+            <td><span class="c-yes">✓</span></td>
+          </tr>
+          <tr>
+            <td>Sem instalação necessária</td>
+            <td class="highlight"><span class="c-yes">✓</span></td>
+            <td><span class="c-yes">✓</span></td>
+            <td><span class="c-no">✗</span></td>
+          </tr>
+          <tr>
+            <td>Suporte personalizado</td>
+            <td class="highlight"><span class="c-yes">✓</span></td>
+            <td><span class="c-no">✗</span></td>
+            <td><span class="c-no">✗</span></td>
+          </tr>
+          <tr>
+            <td>Preço mensal</td>
+            <td class="highlight" style="color:var(--orange);font-weight:700">R$ 69,90</td>
+            <td style="color:var(--gray)">R$ 35–70</td>
+            <td style="color:var(--gray)">R$ 20–120</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- DEPOIMENTOS -->
+<section style="padding:5rem 2rem;background:var(--navy2)">
+  <div class="section-inner">
+    <div class="features-header">
+      <div class="section-tag">Depoimentos</div>
+      <h2>O que nossos <em>clientes</em> dizem</h2>
+      <p class="section-sub" style="margin:0 auto">Pessoas reais que transformaram sua vida financeira com o BenFinance.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">"Finalmente consegui entender para onde ia meu dinheiro todo mês. O parcelamento automático me salvou de várias dores de cabeça!"</p>
+        <div class="test-author">
+          <div class="test-avatar" style="background:linear-gradient(135deg,#f97316,#ea580c)">M</div>
+          <div><div class="test-name">Mariana S.</div><div class="test-role">Autônoma · Recife, PE</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">"O chat com IA do plano Premium é sensacional. Perguntei onde eu mais gastava e em 2 segundos tive a resposta. Reduzi 30% das despesas!"</p>
+        <div class="test-author">
+          <div class="test-avatar" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8)">R</div>
+          <div><div class="test-name">Ricardo T.</div><div class="test-role">Empresário · São Paulo, SP</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">"Uso em 3 dispositivos diferentes e tudo sincroniza na hora. Nunca mais perdi lançamento. Melhor investimento que fiz esse ano!"</p>
+        <div class="test-author">
+          <div class="test-avatar" style="background:linear-gradient(135deg,#22c55e,#15803d)">A</div>
+          <div><div class="test-name">Ana Paula R.</div><div class="test-role">CLT · Fortaleza, CE</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="planos"
+<section id="planos">
+  <div class="section-inner">
+    <div class="plans-header">
+      <div class="section-tag">Planos</div>
+      <h2>Escolha o plano <em>ideal</em> para você</h2>
+      <p class="section-sub" style="margin:0 auto">Sem contratos longos. Cancele quando quiser.</p>
+    </div>
+    <div class="plans-grid">
+      <!-- Básico -->
+      <div class="plan-card">
+        <div class="plan-name">Plano Básico</div>
+        <div class="plan-price">
+          <span class="currency">R$</span>
+          <span class="amount">69</span><span style="font-size:1.8rem;font-weight:800">,90</span>
+          <div class="period">/mês</div>
+        </div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> Dashboard completo</li>
+          <li><span class="check">✓</span> Lançamentos ilimitados</li>
+          <li><span class="check">✓</span> Parcelamento automático</li>
+          <li><span class="check">✓</span> Gestão de cartões</li>
+          <li><span class="check">✓</span> Extrato mensal</li>
+          <li><span class="check">✓</span> Sincronização em nuvem</li>
+          <li><span class="check">✓</span> Backup e exportação</li>
+          <li><span class="x">✗</span> Chat com IA</li>
+        </ul>
+        <a href="https://wa.me/5581996840938?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Plano%20B%C3%A1sico%20do%20BenFinance%20%28R%24%2069%2C90/m%C3%AAs%29.%20Pode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="plan-btn" style="background:linear-gradient(135deg,#25d366,#128c7e);color:white;display:flex;align-items:center;justify-content:center;gap:8px"><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' style='width:18px;height:18px'><path d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z'/></svg>Assinar via WhatsApp</a>
+        <a href="https://benjamimmuniz-cmd.github.io/benfinance/index.html" target="_blank" rel="noopener" style="display:block;text-align:center;margin-top:.6rem;font-size:.8rem;color:var(--gray);text-decoration:underline">Já tenho acesso → Entrar no app</a>
+      </div>
+      <!-- Premium -->
+      <div class="plan-card featured">
+        <div class="plan-badge">⭐ MAIS POPULAR</div>
+        <div class="plan-name">Plano Premium</div>
+        <div class="plan-price">
+          <span class="currency">R$</span>
+          <span class="amount">89</span><span style="font-size:1.8rem;font-weight:800">,90</span>
+          <div class="period">/mês</div>
+        </div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> Tudo do Básico</li>
+          <li><span class="check">✓</span> Dashboard completo</li>
+          <li><span class="check">✓</span> Lançamentos ilimitados</li>
+          <li><span class="check">✓</span> Parcelamento automático</li>
+          <li><span class="check">✓</span> Gestão de cartões</li>
+          <li><span class="check">✓</span> Extrato mensal</li>
+          <li><span class="check">✓</span> Sincronização em nuvem</li>
+          <li style="background: rgba(34,197,94,0.1); border-radius: 8px; padding: 8px; margin: 0 -8px; border-left: 3px solid #22c55e;"><span class="check" style="color:#22c55e; font-weight: 900;">✓</span> <strong style="color:#22c55e;">Chat com IA incluso</strong></li>
+        </ul>
+        <a href="https://wa.me/5581996840938?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Plano%20Premium%20do%20BenFinance%20%28R%24%2089%2C90/m%C3%AAs%29%20com%20Chat%20com%20IA.%20Pode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="plan-btn" style="background:linear-gradient(135deg,#25d366,#128c7e);color:white;display:flex;align-items:center;justify-content:center;gap:8px"><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' style='width:18px;height:18px'><path d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z'/></svg>Assinar via WhatsApp</a>
+        <a href="https://benjamimmuniz-cmd.github.io/benfinance/index.html" target="_blank" rel="noopener" style="display:block;text-align:center;margin-top:.6rem;font-size:.8rem;color:var(--gray);text-decoration:underline">Já tenho acesso → Entrar no app</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-inner">
+    <div style="text-align:center;margin-bottom:.5rem">
+      <div class="section-tag">FAQ</div>
+      <h2>Perguntas <em>frequentes</em></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Funciona no celular? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Sim! O BenFinance funciona em qualquer dispositivo com navegador — celular, tablet, notebook ou desktop. Basta abrir o arquivo e fazer login.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Meus dados ficam seguros? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Seus dados são armazenados no Firebase (Google Cloud) com criptografia e sincronizados com segurança. Nenhum dado fica em servidores desconhecidos.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Preciso instalar algum programa? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Não! O BenFinance é um arquivo HTML que roda diretamente no navegador. Sem instalação, sem loja de apps, sem complicação.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Posso cancelar quando quiser? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Sim, sem multa e sem burocracia. É só nos avisar pelo WhatsApp ou e-mail e cancelamos imediatamente. Sem contrato longo.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Qual a diferença entre o Básico e o Premium? <span class="faq-icon">+</span></div>
+        <div class="faq-a">O Plano Básico tem todas as funcionalidades financeiras: lançamentos, cartões, parcelamento, extrato e sincronização em nuvem. O Premium inclui tudo isso mais o Chat com Inteligência Artificial integrado.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Como recebo o acesso após assinar? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Após o pagamento, enviamos o arquivo e as instruções de acesso em até 24h pelo WhatsApp ou e-mail. Na prática, costuma ser muito mais rápido!</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato"
+<section id="contato">
+  <div class="section-inner">
+    <div class="contact-wrapper">
+      <div class="section-tag" style="background:rgba(249,115,22,0.1);border-color:rgba(249,115,22,0.3);color:var(--orange)">Contato</div>
+      <h2>Pronto para <em>começar?</em></h2>
+      <p class="section-sub">Entre em contato por e-mail e receba acesso ao BenFinance em minutos.</p>
+      <div class="contact-box">
+
+        <a href="https://wa.me/5581996840938?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20BenFinance.%20Pode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="contact-whatsapp">
+          <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </span>
+          Chamar no WhatsApp
+        </a>
+
+        <a href="https://benjamimmuniz-cmd.github.io/benfinance/index.html" target="_blank" rel="noopener" class="contact-email">
+          <span class="icon">🚀</span>
+          Acessar BenFinance Agora
+        </a>
+        <p style="font-size:.9rem;color:var(--gray);margin-bottom:1.2rem">Clique acima para enviar um e-mail ou escolha seu plano diretamente:</p>
+        <div class="plan-options">
+          <a href="mailto:bflintelligence@gmail.com?subject=Quero o Plano Básico do BenFinance&body=Olá! Tenho interesse no Plano Básico do BenFinance (R$ 69,90/mês)." class="plan-option">
+            <div class="plan-opt-name">Plano Básico</div>
+            <div class="plan-opt-price">R$ 69,90/mês</div>
+          </a>
+          <a href="mailto:bflintelligence@gmail.com?subject=Quero o Plano Premium do BenFinance&body=Olá! Tenho interesse no Plano Premium do BenFinance (R$ 89,90/mês) com Chat com IA." class="plan-option" style="border-color:rgba(249,115,22,0.3)">
+            <div class="plan-opt-name">Plano Premium ⭐</div>
+            <div class="plan-opt-price">R$ 89,90/mês · Com IA</div>
+          </a>
+        </div>
+        <p class="contact-hint">Respondemos em até 24h • Sem burocracia • Cancele quando quiser</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<!-- FOOTER -->
+<footer>
+  <div style="text-align:center;margin-bottom:1.5rem">
+    <a href="https://benjamimmuniz-cmd.github.io/benfinance/index.html" target="_blank" rel="noopener" class="btn-primary" style="display:inline-block;font-size:.95rem;padding:.7rem 1.8rem">
+      🚀 Acessar o BenFinance
+    </a>
+  </div>
+  <div class="footer-logo">
+    <img src="data:image/png;base64,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" alt="BFL Intelligence">
+    <span>BFL Intelligence</span>
+  </div>
+  <p>© 2026 BFL Intelligence · BenFinance · Todos os direitos reservados</p>
+  <p style="margin-top:.5rem">bflintelligence@gmail.com</p>
+  <div style="margin-top:1.5rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,0.06)">
+    <p style="font-size:.8rem;color:#475569">
+      Desenvolvido por <strong style="color:var(--orange)">Benjamim Muniz</strong> · BFL Intelligence
+    </p>
+  </div>
+</footer>
+
+
+
+<!-- MASCOTE -->
+<div id="mascote-wrapper">
+  <div id="mascote-bubble" style="display:none">
+    <button class="bubble-close" onclick="mascoteFecharBubble()">✕</button>
+    <span class="bubble-emoji" id="bubble-emoji">👋</span>
+    <span id="bubble-text">Oi! Sou o Ben, seu assistente financeiro!</span>
+  </div>
+
+  <div style="position:relative">
+    <div id="mascote-bot" onclick="mascoteClick()" title="Fale com o Ben!">
+      <svg viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#3b82f6"/>
+            <stop offset="100%" stop-color="#1d4ed8"/>
+          </linearGradient>
+          <linearGradient id="headGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#60a5fa"/>
+            <stop offset="100%" stop-color="#3b82f6"/>
+          </linearGradient>
+          <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#f97316"/>
+            <stop offset="100%" stop-color="#ea580c"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Sombra base -->
+        <ellipse cx="40" cy="88" rx="22" ry="4" fill="rgba(0,0,0,0.2)"/>
+
+        <!-- Pernas -->
+        <rect x="25" y="68" width="11" height="16" rx="5" fill="#1d4ed8"/>
+        <rect x="44" y="68" width="11" height="16" rx="5" fill="#1d4ed8"/>
+        <!-- Pés -->
+        <ellipse cx="30" cy="84" rx="8" ry="4" fill="#0f172a"/>
+        <ellipse cx="50" cy="84" rx="8" ry="4" fill="#0f172a"/>
+
+        <!-- Corpo -->
+        <rect x="18" y="38" width="44" height="34" rx="12" fill="url(#bodyGrad)"/>
+
+        <!-- Detalhe laranja no peito (logo BFL) -->
+        <rect x="28" y="47" width="24" height="4" rx="2" fill="url(#accentGrad)" opacity="0.9"/>
+        <rect x="32" y="55" width="16" height="3" rx="1.5" fill="rgba(255,255,255,0.25)"/>
+
+        <!-- Braço esquerdo -->
+        <rect x="5" y="40" width="13" height="9" rx="4" fill="url(#bodyGrad)"/>
+        <!-- Mão esquerda -->
+        <circle cx="7" cy="52" r="5" fill="#60a5fa"/>
+
+        <!-- Braço direito -->
+        <g id="arm-right">
+          <rect x="62" y="40" width="13" height="9" rx="4" fill="url(#bodyGrad)"/>
+          <!-- Mão direita -->
+          <circle cx="73" cy="52" r="5" fill="#60a5fa"/>
+        </g>
+
+        <!-- Pescoço -->
+        <rect x="33" y="30" width="14" height="10" rx="4" fill="#3b82f6"/>
+
+        <!-- Cabeça -->
+        <rect x="14" y="8" width="52" height="38" rx="18" fill="url(#headGrad)"/>
+
+        <!-- Antena -->
+        <rect x="38" y="1" width="4" height="10" rx="2" fill="#60a5fa"/>
+        <circle cx="40" cy="1" r="4" fill="#f97316"/>
+
+        <!-- Visor / tela da face -->
+        <rect x="20" y="14" width="40" height="24" rx="10" fill="#0a1628"/>
+        <rect x="22" y="16" width="36" height="20" rx="8" fill="#0f172a"/>
+
+        <!-- Olhos -->
+        <g class="eye-left">
+          <circle cx="31" cy="26" r="5" fill="#3b82f6"/>
+          <circle cx="31" cy="26" r="3" fill="white"/>
+          <circle cx="32" cy="25" r="1.5" fill="#0a1628"/>
+          <circle cx="33" cy="24" r="0.8" fill="white"/>
+        </g>
+        <g class="eye-right">
+          <circle cx="49" cy="26" r="5" fill="#3b82f6"/>
+          <circle cx="49" cy="26" r="3" fill="white"/>
+          <circle cx="50" cy="25" r="1.5" fill="#0a1628"/>
+          <circle cx="51" cy="24" r="0.8" fill="white"/>
+        </g>
+
+        <!-- Boca sorrindo -->
+        <path id="mascote-mouth" d="M 32 34 Q 40 40 48 34" stroke="#f97316" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+        <!-- Bochecha blush -->
+        <ellipse cx="22" cy="30" rx="4" ry="2.5" fill="#f97316" opacity="0.3"/>
+        <ellipse cx="58" cy="30" rx="4" ry="2.5" fill="#f97316" opacity="0.3"/>
+      </svg>
+    </div>
+    <div id="mascote-notif">1</div>
+  </div>
+</div>
+
+<!-- WhatsApp Float Button -->
+<a href="https://wa.me/5581996840938?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20BenFinance.%20Pode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="wa-float" title="Fale conosco no WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+  <span>WhatsApp</span>
+</a>
+
+<style>
+.wa-float {
+  position: fixed; bottom: 28px; right: 28px; z-index: 999;
+  display: flex; align-items: center; gap: 10px;
+  background: #25d366; color: white;
+  border-radius: 50px; padding: 14px 20px;
+  text-decoration: none; font-weight: 700; font-size: 0.95rem;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+  transition: transform .2s, box-shadow .2s;
+}
+.wa-float:hover { transform: translateY(-3px); box-shadow: 0 6px 28px rgba(37,211,102,0.65); }
+.wa-float svg { width: 22px; height: 22px; flex-shrink: 0; }
+@media (max-width: 480px) {
+  .wa-float span { display: none; }
+  .wa-float { padding: 14px; border-radius: 50%; }
+}
+</style>
+
+
+<script>
+(function() {
+  // Mensagens por seção
+  const mensagens = {
+    hero: [
+      { emoji: '👋', text: 'Oi! Sou o <strong>Ben</strong>, mascote do BenFinance! Posso te ajudar a entender tudo por aqui 😄' },
+      { emoji: '💡', text: 'O <strong>BenFinance</strong> é o jeito mais fácil de controlar suas finanças. Tudo em um arquivo só!' },
+      { emoji: '☁️', text: 'Seus dados ficam salvos na <strong>nuvem</strong> e sincronizados em qualquer dispositivo! 🚀' },
+    ],
+    funcionalidades: [
+      { emoji: '🎯', text: 'Aqui você vê tudo que o BenFinance faz! São <strong>6 funcionalidades</strong> incríveis 😎' },
+      { emoji: '💳', text: 'Você sabia que dá pra gerenciar <strong>vários cartões</strong> separados? Cada um com seu limite e gasto!' },
+      { emoji: '📅', text: 'O <strong>parcelamento automático</strong> é incrível! Lança uma vez e ele distribui tudo sozinho 🙌' },
+    ],
+    'como-funciona': [
+      { emoji: '🚀', text: 'São só <strong>4 passos</strong> para começar! Bem simples mesmo, pode confiar 😄' },
+      { emoji: '⚡', text: 'Em menos de <strong>5 minutos</strong> você já tá com as finanças organizadas. Sério!' },
+    ],
+    planos: [
+      { emoji: '💰', text: 'Temos dois planos! O <strong>Básico</strong> já resolve tudo e o <strong>Premium</strong> tem IA inclusa 🤖' },
+      { emoji: '⭐', text: 'O plano <strong>Premium</strong> é o mais escolhido! Você tem acesso ao Chat com IA por apenas R$&nbsp;80/mês 🎉' },
+      { emoji: '🤝', text: 'Sem contrato longo! Você pode cancelar <strong>quando quiser</strong>. Sem burocracia!' },
+    ],
+    contato: [
+      { emoji: '📱', text: 'Quer assinar? É só clicar no botão do <strong>WhatsApp</strong> ou mandar um e-mail! Super rápido 💬' },
+      { emoji: '🎉', text: 'Respondemos em até <strong>24h</strong>! Mas geralmente muito mais rápido que isso 😄' },
+    ],
+  };
+
+  let secaoAtual = 'hero';
+  let msgIndex = 0;
+  let bubbleAberta = false;
+  let timerProxMsg = null;
+  let timerApareceu = null;
+
+  function getEl(id) { return document.getElementById(id); }
+
+  function mostrarBubble(emoji, texto) {
+    const bubble = getEl('mascote-bubble');
+    const notif = getEl('mascote-notif');
+    getEl('bubble-emoji').innerHTML = emoji;
+    getEl('bubble-text').innerHTML = texto;
+    bubble.style.display = 'block';
+    bubble.style.animation = 'none';
+    void bubble.offsetWidth;
+    bubble.style.animation = 'bubblePop .35s cubic-bezier(.34,1.56,.64,1) forwards';
+    bubbleAberta = true;
+    notif.style.display = 'none';
+    // Fechar automaticamente após 7s
+    clearTimeout(timerApareceu);
+    timerApareceu = setTimeout(() => {
+      if (bubbleAberta) mascoteFecharBubble(true);
+    }, 7000);
+  }
+
+  function mascoteFecharBubble(auto) {
+    const bubble = getEl('mascote-bubble');
+    bubble.style.display = 'none';
+    bubbleAberta = false;
+    if (!auto) return;
+    // Agendar próxima mensagem
+    clearTimeout(timerProxMsg);
+    timerProxMsg = setTimeout(mostrarProxima, 8000);
+  }
+  window.mascoteFecharBubble = mascoteFecharBubble;
+
+  function mostrarProxima() {
+    const lista = mensagens[secaoAtual] || mensagens.hero;
+    const msg = lista[msgIndex % lista.length];
+    msgIndex++;
+    mostrarBubble(msg.emoji, msg.text);
+  }
+
+  // Clique no boneco
+  window.mascoteClick = function() {
+    const bot = getEl('mascote-bot');
+    bot.classList.add('mascote-waving');
+    setTimeout(() => bot.classList.remove('mascote-waving'), 1000);
+    if (bubbleAberta) {
+      mascoteFecharBubble(false);
+      mostrarProxima();
+    } else {
+      mostrarProxima();
+    }
+  };
+
+  // Detectar seção visível via IntersectionObserver
+  const secoes = ['hero', 'funcionalidades', 'como-funciona', 'planos', 'contato'];
+  const observers = [];
+
+  secoes.forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.3) {
+          if (secaoAtual !== id) {
+            secaoAtual = id;
+            msgIndex = 0;
+            // Mostrar nova mensagem ao entrar na seção
+            clearTimeout(timerProxMsg);
+            clearTimeout(timerApareceu);
+            timerProxMsg = setTimeout(mostrarProxima, 800);
+          }
+        }
+      });
+    }, { threshold: 0.3 });
+    obs.observe(el);
+    observers.push(obs);
+  });
+
+  // Mensagem inicial após 2s
+  setTimeout(() => {
+    getEl('mascote-notif').style.display = 'flex';
+    setTimeout(mostrarProxima, 500);
+  }, 2000);
+
+})();
+</script>
+
+
+<script>
+// ── ANIMAR DASHBOARD APP ──
+(function(){
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !entry.target.dataset.animated) {
+        entry.target.dataset.animated = 'true';
+
+        // Animar saldo
+        const saldoValue = entry.target.querySelector('.app-saldo-value');
+        if (saldoValue) {
+          animateNumber(saldoValue, 0, 3847.50, 2000, 'R$ ');
+        }
+
+        // Animar receitas
+        const receitas = entry.target.querySelector('.app-saldo-sub span:nth-child(1)');
+        if (receitas) {
+          animateNumber(receitas, 0, 7200, 2000, '↑ Receitas: R$ ', true);
+        }
+
+        // Animar despesas
+        const despesas = entry.target.querySelector('.app-saldo-sub span:nth-child(2)');
+        if (despesas) {
+          animateNumber(despesas, 0, 3352, 2000, '↓ Despesas: R$ ', true);
+        }
+      }
+    });
+  }, { threshold: 0.3 });
+
+  const appScreen = document.querySelector('.app-screen');
+  if (appScreen) observer.observe(appScreen);
+
+  function animateNumber(el, start, end, duration, prefix = '', isCurrency = false) {
+    const startTime = Date.now();
+    function update() {
+      const elapsed = Date.now() - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const easeOut = 1 - Math.pow(1 - progress, 3);
+      const current = start + (end - start) * easeOut;
+
+      if (isCurrency) {
+        el.textContent = prefix + current.toLocaleString('pt-BR', { maximumFractionDigits: 0 });
+      } else {
+        el.textContent = prefix + current.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      }
+
+      if (progress < 1) requestAnimationFrame(update);
+    }
+    update();
+  }
+})();
+</script>
+
+<script>
+// ── CRONÔMETRO ──
+(function(){
+  // Guardar o tempo restante no sessionStorage para não resetar ao rolar
+  const key = 'bf_timer_end';
+  let endTime = parseInt(sessionStorage.getItem(key) || '0');
+  if (!endTime || endTime < Date.now()) {
+    endTime = Date.now() + (23 * 3600 + 59 * 60 + 59) * 1000;
+    sessionStorage.setItem(key, endTime);
+  }
+  function updateTimer() {
+    const diff = Math.max(0, endTime - Date.now());
+    const h = Math.floor(diff / 3600000).toString().padStart(2,'0');
+    const m = Math.floor((diff % 3600000) / 60000).toString().padStart(2,'0');
+    const s = Math.floor((diff % 60000) / 1000).toString().padStart(2,'0');
+    const el = document.getElementById('timer-display');
+    if (el) el.textContent = h + ':' + m + ':' + s;
+    if (diff > 0) requestAnimationFrame(updateTimer);
+  }
+  updateTimer();
+})();
+
+// ── CONTADOR ANIMADO ──
+(function(){
+  const counters = document.querySelectorAll('.stat-counter .num');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = parseInt(el.dataset.target || '0');
+      const prefix = el.dataset.prefix || '';
+      const suffix = el.dataset.suffix || '';
+      const duration = 1800;
+      const start = Date.now();
+      function tick() {
+        const progress = Math.min(1, (Date.now() - start) / duration);
+        const ease = 1 - Math.pow(1 - progress, 3);
+        let val = Math.round(target * ease);
+        // Formatar número grande
+        if (target >= 1000000) {
+          el.innerHTML = prefix + (val / 1000000).toFixed(1) + suffix;
+        } else {
+          el.innerHTML = prefix + val.toLocaleString('pt-BR') + suffix;
+        }
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+      tick();
+      obs.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(c => obs.observe(c));
+})();
+
+// ── FAQ TOGGLE ──
+function toggleFaq(el) {
+  const isOpen = el.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) el.classList.add('open');
+}
+
+// ── DASHBOARD CARD NUMBERS ANIMATION ──
+(function(){
+  const dashboardCards = document.querySelectorAll('.app-stat-value[data-value]');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = parseFloat(el.dataset.value);
+      const duration = 2000;
+      const start = Date.now();
+      function tick() {
+        const progress = Math.min(1, (Date.now() - start) / duration);
+        const ease = 1 - Math.pow(1 - progress, 3);
+        const val = Math.round(target * ease * 100) / 100;
+        el.textContent = 'R$ ' + val.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+      tick();
+      obs.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  dashboardCards.forEach(c => obs.observe(c));
+})();
+
+// ── DASHBOARD CHART BARS ANIMATION ──
+(function(){
+  const chartBars = document.querySelectorAll('.app-chart-bar .app-bar');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const bar = entry.target;
+      const widthPercent = Math.random() * 40 + 50;
+      bar.style.width = widthPercent + '%';
+      obs.unobserve(bar);
+    });
+  }, { threshold: 0.5 });
+  chartBars.forEach(b => obs.observe(b));
+})();
+
+
+// ── MASCOTE HOVER NOS BOTÕES ──
+(function(){
+  const hoverMsgs = {
+    '.btn-primary':    { emoji: '🔥', text: 'Boa escolha! Clique e comece a organizar suas finanças agora mesmo!' },
+    '.plan-btn':       { emoji: '⭐', text: 'Esse plano é muito bom! Cancele quando quiser, sem burocracia 😊' },
+    '.plan-card.featured .plan-btn': { emoji: '🤖', text: 'Com o Premium você tem IA! Ela analisa seus gastos e dá dicas personalizadas!' },
+    '.nav-cta':        { emoji: '👆', text: 'Clique aqui para assinar e ter acesso imediato ao BenFinance!' },
+    '.contact-whatsapp': { emoji: '💬', text: 'WhatsApp é a forma mais rápida! Respondemos em minutinhos 😄' },
+    '[href*="wa.me"]': { emoji: '📱', text: 'Já deixei a mensagem pronta pra você! É só enviar 🚀' },
+    '.feature-card': { emoji: '✨', text: 'Veja só que recurso incrível! Faz toda diferença!' },
+    '.contact-email': { emoji: '🎉', text: 'Tá na hora! Clique aqui e entre no seu BenFinance!' },
+    '.carousel-item': { emoji: '💡', text: 'Cada um desses recursos vai facilitar sua vida financeira!' },
+    'h2': { emoji: '👀', text: 'Leia bem essa seção, tem coisas legais por aqui!' },
+    '.stat-counter': { emoji: '📈', text: 'Olha só a quantidade de clientes satisfeitos! Você pode ser o próximo!' },
+    '.faq-item': { emoji: '🤔', text: 'Clique para saber a resposta! Tiro todas suas dúvidas aqui!' },
+  };
+
+  Object.entries(hoverMsgs).forEach(([sel, msg]) => {
+    document.querySelectorAll(sel).forEach(btn => {
+      btn.addEventListener('mouseenter', () => {
+        if (typeof mostrarBubble === 'function') mostrarBubble(msg.emoji, msg.text);
+      });
+    });
+  });
+
+  // Expressões faciais — olhos mais rápidos na seção de planos
+  const planos = document.getElementById('planos');
+  if (planos) {
+    new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        const eyes = document.querySelectorAll('.eye-left, .eye-right');
+        if (e.isIntersecting) {
+          eyes.forEach(eye => eye.style.animationDuration = '1.5s');
+          const mouth = document.getElementById('mascote-mouth');
+          if (mouth) mouth.setAttribute('d', 'M 30 33 Q 40 42 50 33');
+        } else {
+          eyes.forEach(eye => eye.style.animationDuration = '');
+          const mouth = document.getElementById('mascote-mouth');
+          if (mouth) mouth.setAttribute('d', 'M 32 34 Q 40 40 48 34');
+        }
+      });
+    }, { threshold: 0.3 }).observe(planos);
+  }
+
+  // Mensagens adicionais do mascote sobre depoimentos e FAQ
+  if (typeof mensagens !== 'undefined') {
+    mensagens['faq'] = [
+      { emoji: '🙋', text: 'Tem alguma dúvida? Veja as perguntas frequentes aqui! Se não achar a resposta, me chama no WhatsApp 😄' },
+    ];
+  }
+})();
+</script>
+
+</body>
+</html>
