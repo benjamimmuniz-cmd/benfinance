@@ -1,0 +1,27 @@
+{
+  "name": "BenFinance",
+  "short_name": "BenFinance",
+  "description": "Sistema financeiro completo — lançamentos, estoque, mensalidades e mais",
+  "start_url": "/benfinance/",
+  "display": "standalone",
+  "background_color": "#0f1117",
+  "theme_color": "#f97316",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "bfl_icon_192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "bfl_icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["finance", "business", "productivity"],
+  "screenshots": [],
+  "lang": "pt-BR"
+}
