@@ -1968,6 +1968,15 @@ function salvarDados(){
   // Salva localmente sempre
   try{ localStorage.setItem(chave,JSON.stringify(dados)); }catch(e){}
 
+  // PROTEÇÃO ANTI-APAGAMENTO: nunca envia dados totalmente vazios para a nuvem.
+  // Se lançamentos, cartões E histórico estão todos vazios, é quase sempre um
+  // estado "ainda não carregou" — gravar isso apagaria os dados dos outros aparelhos.
+  const tudoVazio = (lancamentos||[]).length===0 && (cartoes||[]).length===0 && (historico||[]).length===0;
+  if(tudoVazio){
+    console.warn('🛡️ salvarDados: dados vazios — NÃO enviado à nuvem (proteção contra apagamento).');
+    return;
+  }
+
   // Envia para Firestore (sincronização entre dispositivos)
   if(window.fbReady&&window.fb){
     const{db,doc,setDoc}=window.fb;
