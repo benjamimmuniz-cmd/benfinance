@@ -66,9 +66,10 @@
     body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;transition:background .3s,color .3s;}
 
     /* SCROLLBAR */
-    ::-webkit-scrollbar{width:5px;height:5px;}
+    ::-webkit-scrollbar{width:8px;height:8px;}
     ::-webkit-scrollbar-track{background:var(--bg);}
-    ::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px;}
+    ::-webkit-scrollbar-thumb{background:var(--orange);border-radius:6px;border:2px solid var(--bg);}
+    ::-webkit-scrollbar-thumb:hover{background:#ea6a00;}
 
     /* LOGIN */
     #tela-login{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#030712 0%,#0a0f1e 50%,#0d0a05 100%);position:relative;overflow:hidden;}
@@ -2026,6 +2027,12 @@ async function carregarDados(){
 
     console.log('☁️ Nuvem: ts='+cloudTs+' qtd='+cloudQtd+' | Local: ts='+localTs+' qtd='+localQtd);
 
+    // Se a nuvem retornou vazio mas tem timestamp recente, pode ser problema de SDK/cache — ignora
+    if(cloudQtd===0 && cloudTs>0 && localQtd===0){
+      console.warn('⚠️ Nuvem retornou 0 lançamentos com ts válido — possível erro de SDK. Abortando sync para não sobrescrever dados.');
+      return;
+    }
+
     // ACUMULAR TUDO: qualquer lançamento novo de qualquer dispositivo sempre entra
     // Nunca apaga, nunca substitui — só adiciona o que ainda não existe (por ID)
     function acumularPorId(localArr, cloudArr, idFn){
@@ -2074,8 +2081,8 @@ async function carregarDados(){
 
     console.log('✅ Sync acumulativo: lanç='+lancMerged.length+' (cloud:'+cloudQtd+' local:'+localQtd+') cart='+cartMerged.length);
 
-    // Salva o conjunto completo de volta na nuvem — todos os dispositivos convergem
-    salvarDados();
+    // Salva de volta na nuvem APENAS se temos mais dados que a nuvem (nunca sobrescreve com menos)
+    if(lancMerged.length >= cloudQtd) salvarDados();
 
     if(typeof init==='function')init();
     if(typeof renderizarCartoes==='function')renderizarCartoes();
